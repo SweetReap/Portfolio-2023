@@ -7,7 +7,7 @@
 
 body{
     margin: 0;
-    background-color: $main-color;
+    background-color: $bkg-color;
 }
 
 .nav-bar{
@@ -18,7 +18,7 @@ body{
     justify-content: space-between;
     align-items: center;
     gap: 15px;
-    padding: 0 1rem;
+    padding: .2rem;
 
     .page-title{
         font-size: 25px;
@@ -49,7 +49,7 @@ body{
     }
 
     li:hover{
-        background-color: #412b6456;
+        background-color: $box-color;
         border-radius: 15px;
     }
 

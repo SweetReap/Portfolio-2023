@@ -1,0 +1,105 @@
+ @import '../base-theme/colors.scss';
+ @import '../base-theme/fonts.scss';
+
+.Container{
+    margin: 0;
+    box-sizing: border-box;
+    color: $dark-text;
+
+    background-color: #ffffff60; //temp
+
+    .intro-container{
+        display: flex;
+        align-items: center;
+        gap: 18rem;
+        padding:1.5rem;
+        height: 25rem;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    .intro{
+        min-height: 15rem;
+        min-width: 25%;
+        padding: 1.5rem;
+
+        .name-logo{
+            margin: 15px;
+            padding: 5px;
+            min-width: 40%;
+            max-height: 10%;
+
+            p{
+                margin: 0;
+                font-family: 'Chauncy Pro', sans-serif;
+                color:white;
+                font-size: 60px;
+                font-weight: 700;
+            }
+        }
+
+
+        .small-txt-title{
+            font-weight: 300;
+            font-size: 1.5rem;
+            margin: 1rem;
+            margin-bottom: 0px;
+        }
+
+        .name-title{
+            font-size: 60px;
+            font-weight: 800;
+            margin: 10px;
+            color: #190e2be2;
+        }
+
+        .role-title{
+            margin: 0px 15px 0px 15px;
+            font-weight: 200;
+        }
+
+        .about-me-short{
+            margin: 15px;
+            margin-top: 5px;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .about-me-more{
+            text-decoration: none;
+            border: none;
+            padding: .5rem;
+            margin-left: 15px;
+
+            color: $main-color;
+            background-color: $box-color;
+            font-family: 'Lato', sans-serif;
+            font-weight: 600;
+
+        }
+
+        hr{
+            border: 0;
+            background: #333;
+            background-image: linear-gradient(to right, $main-color, $dark-text, $main-color);
+            height: .1px;
+            border-radius: 5px;
+            margin-top: 1px;
+        }
+
+    }
+
+    .image-right-side{
+        background-color: $alert-color; //temp
+        min-width: 20rem;
+        min-height: 20rem;
+        text-align: center;
+        border-radius: 100px;   
+
+    }
+
+    .skills-list{
+        height: 25rem;
+        background-color: #ffffff2d;
+    }
+}

@@ -2,5 +2,12 @@
 @import './components/base-theme/colors.scss';
 
 body{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Karla', sans-serif;
+  color: $dark-text;
+}
+
+.to-do{
+  width: 15.5rem;
+  min-height: 2.5rem;
+  position: fixed;
 }

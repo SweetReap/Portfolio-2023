@@ -2,3 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
 @import url("https://use.typekit.net/ctm3zrs.css");
+
+
+//WEBFONTS
+// @font-face {
+//     font-family: 'handwriting1regular';
+//     src: url('handwriting1-regular-webfont.woff2') format('woff2'),
+//          url('handwriting1-regular-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+
+// }
+
+@font-face {
+    font-family: 'balooregular';
+    src: url('Baloo-Regular-webfont.eot');
+    src: url('Baloo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Baloo-Regular-webfont.woff2') format('woff2'),
+         url('Baloo-Regular-webfont.woff') format('woff'),
+         url('Baloo-Regular-webfont.ttf') format('truetype'),
+         url('Baloo-Regular-webfont.svg#balooregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

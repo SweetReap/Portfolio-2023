@@ -1,3 +1,4 @@
+import Spline_Sam from '../../assets/3D/spline_sam';
 import './styles.scss';
 
 export default function Home(){
@@ -20,7 +21,9 @@ export default function Home(){
                 </div>
 
                 <div className="image-right-side">
-                    <p>img or 3dmodel here</p>
+                    <div className='container-spline-head'>
+                        <Spline_Sam />
+                    </div>
                 </div>
             </div>
 

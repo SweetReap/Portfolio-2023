@@ -31,10 +31,12 @@
 
             p{
                 margin: 0;
-                font-family: 'Chauncy Pro', sans-serif;
+                font-family: 'handwriting1', sans-serif;
                 color:white;
                 font-size: 60px;
                 font-weight: 700;
+                letter-spacing: 7px;
+                text-align: justify;
             }
         }
 
@@ -63,6 +65,7 @@
             margin-top: 5px;
             font-style: italic;
             font-weight: 500;
+            font-size: 20px;
         }
 
         .about-me-more{
@@ -90,12 +93,20 @@
     }
 
     .image-right-side{
-        background-color: $alert-color; //temp
-        min-width: 20rem;
-        min-height: 20rem;
-        text-align: center;
-        border-radius: 100px;   
+        background-color: $box-color; //temp
+        border: 3px solid #fff;
+        border-radius: 30px;    
+        // width: 35%;
+        height: 100%;
 
+        overflow: hidden;
+
+
+        // .container-spline-head{
+        //     width: 200px;
+        //     height: 200px;
+        // }
+        
     }
 
     .skills-list{

@@ -109,9 +109,7 @@
         .container-spline-head{
             width: 500px;
             height: 500px;
-            margin: 0px 25px 0px 75px;
-
-     
+            margin: 0px 25px 0px 75px;     
         }
         
     }
@@ -191,5 +189,16 @@
         width: 45%;
         margin:2%;
         border-radius: 30px;
+        display:grid;
+        justify-content: center;
+
+
+        .error{
+            margin: 15px;
+            padding: 0;
+            color: $alert-color;
+            font-size: 200px;
+            
+        }
     }
 }

@@ -1,6 +1,9 @@
 import Spline_Sam from '../../assets/3D/spline_sam';
 import {SiAdobeillustrator, SiCsharp, SiProcessingfoundation, SiAdobephotoshop, SiAdobeaftereffects} from 'react-icons/si';
 import './styles.scss';
+
+
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -11,7 +14,8 @@ export default function Home(){
         AOS.init({
             duration: 1000,
             mirror:true,
-            anchorPlacement: 'top-bottom'
+            anchorPlacement: 'top-bottom',
+            delay:'50'
         });
     }, []);
 
@@ -42,7 +46,8 @@ export default function Home(){
 
             <div className='skills-container' data-aos="fade-down">
             <div className='skill-spline-sam'>
-                   <p>hello</p>
+                   <i className="fa-solid fa-circle-exclamation error"></i>
+                   <p>temp image until model is made</p>
             </div>
             <div className='skills-list' data-aos="flip-down">
                         <h1>Skills</h1> {/* add some logos */}

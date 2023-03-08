@@ -2,8 +2,6 @@ import Spline_Sam from '../../assets/3D/spline_sam';
 import {SiAdobeillustrator, SiCsharp, SiProcessingfoundation, SiAdobephotoshop, SiAdobeaftereffects} from 'react-icons/si';
 import './styles.scss';
 
-
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -26,13 +24,15 @@ export default function Home(){
                 <div className="intro">
                     <p className="small-txt-title">Hi! I'm...</p>
                     <div className='name-logo'>
-                      <img src='./images/final-logo/SVG/my-name-light.svg' width={'200px'}/>
+                      <img src='./images/final-logo/SVG/fn-light.svg' height={'150px'}/>
+                      <img src='./images/final-logo/SVG/ln-light.svg' height={'150px'}/>
                    </div>
                     <p className="role-title">Game Developer | Web Developer | Digital Artist</p>
                     {/* <hr/> */}
                     <p className='about-me-short'>
                         I'm currently a student in NYC who strives to improve the user experience and create solutions to modern problems. 
-                        <br/> Along with that, I have a huge passion for game development, web design, and UI/UX design.
+                        <br/> 
+                        Along with that, I have a huge passion for game development, web design, and UI/UX design.
                         </p>
                     <button className='about-me-more'>| Explore More |</button>
                 </div>
@@ -45,11 +45,12 @@ export default function Home(){
             </div>
 
             <div className='skills-container' data-aos="fade-down">
-            <div className='skill-spline-sam'>
+                <div className='skill-spline-sam'>
                    <i className="fa-solid fa-circle-exclamation error"></i>
                    <p>temp image until model is made</p>
-            </div>
-            <div className='skills-list' data-aos="flip-down">
+                </div>
+                
+                <div className='skills-list' data-aos="flip-down">
                         <h1>Skills</h1> {/* add some logos */}
                         
                         <ul data-aos="fade-down">
@@ -98,8 +99,7 @@ export default function Home(){
                                 </li>
                             </div>
                         </ul>
-            </div>
-               
+                </div>    
             </div>
         </div>
         

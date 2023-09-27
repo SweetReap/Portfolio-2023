@@ -20,20 +20,8 @@ function App() {
           <Route path = "/projects" element = {<Projects />} />
       </Routes>
       </div>
-      
-      <div className='to-do'>
-                <hr/>
-                <h1 className='to-do-head'>TO-DO LIST</h1>
-                <ol>
-                    {/* <li> <b>Site</b> : Fix navigation. </li> */}
-                    {/* <li><b>Design</b>: Make Navigation bar look more polished.</li> */}
-                    <li>Experiment with Animations</li>
-                    <li>Fix some design choices made here</li>
-                    <li><b>Design</b>: Create logos and character actions.</li>
-                    <li><b>Design</b>: Create and Design 3D models for each page, starting with: <b>Home Page</b>.</li>
-                </ol>
-                <hr/>
-      </div>
+
+      <button type='button'>Click here to Enter!</button>
 
     </div>
   )

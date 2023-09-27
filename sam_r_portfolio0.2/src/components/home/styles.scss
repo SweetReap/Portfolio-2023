@@ -117,17 +117,19 @@
     .image-right-side{
         // border: 1px solid #fff;
         border-radius: 30px;    
-        width: 40%;
+        width: 100%;
         height: 100%;
-
-        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        // overflow: hidden;
 
 
         .container-spline-head{
-            width: 500px;
-            height: 500px;
+            width: 600px;
+            height: 600px;
             margin: 0px 25px 0px 75px;     
             position: sticky;
+            // border: 3px dotted white;
         }
         
     }
@@ -220,6 +222,7 @@
         display:grid;
         justify-content: center;
 
+        text-align: center;
 
         .error{
             margin: 15px;

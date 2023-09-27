@@ -1,0 +1,48 @@
+@import '../base-theme/colors.scss';
+@import '../base-theme/fonts.scss';
+
+.projects-container{
+    max-width: 100%;
+    // border: 3px dotted white; helps identifying how big the container is
+    min-height: 50rem;
+    padding: 20px;
+
+   
+    .games-container{
+        display: grid;
+        gap: 15px;
+      
+        justify-content: center;
+    
+    }
+    .web-dev-container{
+        display: grid;
+        gap: 15px;
+      
+        justify-content: center;
+    
+    }
+    
+    .project-box-container{
+        min-height: 40%;
+        max-width: 50%;
+        margin-left: 25%;
+       
+        background-color: $box-color;
+        text-align: center;
+        color: $main-color;
+        border-radius: 15px;
+        padding: 5px;
+
+        font-size: small;
+
+        h3{
+            background-color: $alert-color;
+            padding: 10px;
+            border-radius: 5px;
+            color: $dark-text;
+            margin: 10px;
+        }
+
+    }
+}

@@ -2,6 +2,8 @@ import './styles.scss';
 import { Link } from 'react-router-dom';
 // import { useMatch, useResolvedPath } from 'react-router-dom';
 
+
+
 export default function Navbar(){
     return ( 
     <nav className="nav-bar">
@@ -10,18 +12,22 @@ export default function Navbar(){
         </Link>
         <ul>
             <li>
-                <Link to="/projects">Projects</Link>
+                <Link to="/home">Home</Link>
             </li>
             <li>
+                <Link to="/projects">Projects</Link>
+            </li> 
+         
+            {/* <li>
                 <Link to="/about_me">About Me</Link>
             </li>
             <li>
                 <Link to="/contact_me">Contact</Link>
-            </li>
+            </li> */}
         </ul>
         <div className='color-theme-toggle'>
-            <p>Color Mode</p>
-            <button>0</button>
+            {/* <p>Color Mode</p>
+            <button>Light</button> */}
         </div>
     </nav>
     )

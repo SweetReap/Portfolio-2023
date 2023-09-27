@@ -13,7 +13,7 @@ export default function Home(){
             duration: 1000,
             mirror:true,
             anchorPlacement: 'top-bottom',
-            delay:'50'
+            delay:'0'
         });
     }, []);
 
@@ -47,7 +47,7 @@ export default function Home(){
             <div className='skills-container' data-aos="fade-down">
                 <div className='skill-spline-sam'>
                    <i className="fa-solid fa-circle-exclamation error"></i>
-                   <p>temp image until model is made</p>
+                   <h4><b>ERROR!</b> <br></br> Website is still in development!</h4>
                 </div>
                 
                 <div className='skills-list' data-aos="flip-down">

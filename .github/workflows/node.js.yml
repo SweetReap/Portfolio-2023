@@ -3,6 +3,10 @@
 
 name: Node.js CI
 
+theme: jekyll-theme-minimal
+title: Sam's Portfolio
+description: hello!
+
 on:
   push:
     branches: [ "master" ]

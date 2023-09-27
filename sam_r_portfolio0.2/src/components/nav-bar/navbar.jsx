@@ -7,12 +7,12 @@ import { Link } from 'react-router-dom';
 export default function Navbar(){
     return ( 
     <nav className="nav-bar">
-        <Link to="/home" className="page-title">
+        <Link to="/" className="page-title">
             <img src='./images/final-logo/SVG/logo-white.svg' alt='logo' width='75px' />
         </Link>
         <ul>
              <li>
-                <Link to="/home">Home</Link>
+                <Link to="/">Home</Link>
             </li>
             <li>
                 <Link to="/projects">Projects</Link>

@@ -4,10 +4,10 @@
 body{
   font-family: 'Karla', sans-serif;
   color: $dark-text;
+  display: flex;
+  justify-content: center;
 }
 
-.to-do{
-  width: 15.5rem;
-  min-height: 2.5rem;
-  position: fixed;
+.loading-img{
+  margin-left: 28%;
 }

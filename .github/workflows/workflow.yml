@@ -37,7 +37,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: './sam_r_portfolio0.2/package-lock.json'
       - name: Install dependencies
-        run: npm install vite fortawesome-fontawesome splinetool/react-spline aos react react-dom sass 
+        run: npm install vite fortawesome/react-fontawesome splinetool/react-spline aos react react-dom sass 
       - name: Build
         run: npm run build
       - name: Setup Pages

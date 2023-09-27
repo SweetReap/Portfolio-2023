@@ -11,7 +11,7 @@ export default function Navbar(){
             <img src='./images/final-logo/SVG/logo-white.svg' alt='logo' width='75px' />
         </Link>
         <ul>
-            <li>
+             <li>
                 <Link to="/home">Home</Link>
             </li>
             <li>

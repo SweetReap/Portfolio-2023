@@ -37,7 +37,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: portfolio/package-lock.json
       - name: Install dependencies
-        run: npm install
+        run: npm install vite fortawesome-fontawesome react-three/fiber 
       - name: Build
         run: npm run build
       - name: Setup Pages

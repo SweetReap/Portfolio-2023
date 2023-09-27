@@ -35,9 +35,9 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
-          cache-dependency-path: sam_r_portfolio0.2/package-lock.json
+          cache-dependency-path: './sam_r_portfolio0.2/package-lock.json'
       - name: Install dependencies
-        run: npm install vite fortawesome-fontawesome react-three/fiber 
+        run: npm install vite fortawesome-fontawesome splinetool/react-spline aos react react-dom sass 
       - name: Build
         run: npm run build
       - name: Setup Pages
@@ -46,7 +46,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload dist repository
-          path: './dist'
+          path: 'sam_r_portfolio0.2/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1

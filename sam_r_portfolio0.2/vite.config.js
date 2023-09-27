@@ -3,6 +3,11 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server:{
+    proxy:{
+      '/api': 'https://master--sam-reape.netlify.app'
+    }
+  },
   plugins: [react()],
-  base: "https://SweetPotats.github.io/Portfolio2023"
+
 })

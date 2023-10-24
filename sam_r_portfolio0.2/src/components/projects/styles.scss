@@ -1,46 +1,93 @@
 @import '../base-theme/colors.scss';
 @import '../base-theme/fonts.scss';
 
+
+@mixin project-box($project-box-container: DarkGray) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    text-align: center;
+    justify-content: center;
+
+    // border: 3px dotted white; //debugging
+ 
+    color: #dedede;
+}
+
+@mixin project-title(){
+    min-width: 95%;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+
 .projects-container{
     max-width: 100%;
-    // border: 3px dotted white; helps identifying how big the container is
+    // border: 3px dotted white; //debugging
     min-height: 50rem;
     padding: 20px;
 
-   
     .games-container{
-        display: grid;
-        gap: 15px;
-      
-        justify-content: center;
-    
+        @include project-box($alert-color);
     }
+
     .web-dev-container{
-        display: grid;
-        gap: 15px;
-      
-        justify-content: center;
-    
+        @include project-box($alert-color); 
+    }
+
+    .soft-dev-container{
+        @include project-box($alert-color); 
+    }
+
+    .dev-title{
+        @include project-title();
+        p{
+            font-size: 2rem;
+            margin: 0;
+            padding: 0;
+            color: $box-color
+        }
     }
     
     .project-box-container{
-        min-height: 40%;
-        max-width: 50%;
-        margin-left: 25%;
+        // min-height: 40%;
+        min-width: 25%;
+        max-width: 30%;
        
-        background-color: $box-color;
+        background-color: $alert-color;
         text-align: center;
         color: $main-color;
-        border-radius: 15px;
-        padding: 5px;
+        border-radius: 3px;
+        padding: 10px;
+        box-shadow: inset 3px white;
 
-        font-size: small;
+        font-size: 12px;
+
+        h1{
+            // background-color: $alert-color;
+            padding: 2%;
+            border-radius: 3px;
+        } 
+        
+        h2{
+            color:$main-color;
+            background-color: black;
+            border-radius: 20px;
+
+            width: 35%;
+            padding: 10px;
+            font-size: small;
+            text-align: center;
+
+            margin-left: 30%;
+
+        }
 
         h3{
-            background-color: $alert-color;
+            // background-color: $alert-color;
             padding: 10px;
             border-radius: 5px;
-            color: $dark-text;
+            color: $main-color;
             margin: 10px;
         }
 

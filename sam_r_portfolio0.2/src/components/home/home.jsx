@@ -34,7 +34,7 @@ export default function Home(){
                         <br/> 
                         Along with that, I have a huge passion for game development, web design, and UI/UX design.
                         </p>
-                    <button className='about-me-more'>| Explore More |</button>
+                    {/* <button className='about-me-more'>| Explore More |</button> */}
                 </div>
 
                 <div className="image-right-side" data-aos='fade-up' data-aos-delay='100'>
@@ -47,7 +47,7 @@ export default function Home(){
             <div className='skills-container' data-aos="fade-down">
                 <div className='skill-spline-sam'>
                    <i className="fa-solid fa-circle-exclamation error"></i>
-                   <h4><b>ERROR!</b> <br></br> Website is still in development!</h4>
+                   <h4><b>ERROR!</b> <br></br> Portfolio is still in development!</h4>
                 </div>
                 
                 <div className='skills-list' data-aos="flip-down">

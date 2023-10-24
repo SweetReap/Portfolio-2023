@@ -1,5 +1,5 @@
 export default function About_Me(){
     return(
-        <p>About Me</p>
+        <h1>About Me</h1>
     );
 }

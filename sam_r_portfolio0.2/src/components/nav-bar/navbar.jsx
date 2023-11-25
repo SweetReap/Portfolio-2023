@@ -18,10 +18,10 @@ export default function Navbar(){
                 <Link to="/projects">Projects</Link>
             </li> 
          
-            {/* <li>
+            <li>
                 <Link to="/about_me">About Me</Link>
             </li>
-            <li>
+            {/* <li>
                 <Link to="/contact_me">Contact</Link>
             </li> */}
         </ul>

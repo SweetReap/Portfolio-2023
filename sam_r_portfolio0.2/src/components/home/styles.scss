@@ -1,24 +1,22 @@
  @import '../base-theme/colors.scss';
  @import '../base-theme/fonts.scss';
 
-
-
 .Container{
     margin: 0;
     box-sizing: border-box;
     color: $dark-text;
 
-    background-color: #ffffff60; //temp
+    // background-color: #ffffff60; //temp
 
     .intro-container{
         display: flex;
         align-items: center;
         // gap: 18rem;
-        padding: 1.5rem;
+        // padding: 1.5rem;
         min-height: 80vh;
         flex-direction: column-reverse;
         margin: auto;
-        background-color: #53bdff6a; //temp
+        // background-color: #53bdff6a; //temp
 
         //nice border stuff - non standard use another method maybe...
         border: none;
@@ -28,8 +26,10 @@
 
     .intro{
         min-height: 15rem;
-        min-width: 25%;
-        padding: .5rem;
+        max-width: 45%;
+        padding: 4.5rem;
+        margin: 1.5rem;
+        margin-top: 25.5rem;
         text-align: center;
         background-color: #ffffff3a;
         margin-bottom: 50px;
@@ -116,7 +116,7 @@
 
     .image-right-side{
         // border: 1px solid #fff;
-        border-radius: 30px;    
+        // border-radius: 30px;    
         width: 100%;
         height: 100%;
         display: flex;
@@ -125,111 +125,14 @@
 
 
         .container-spline-head{
-            width: 600px;
+            width: 700px;
             height: 600px;
-            margin: 0px 25px 0px 75px;     
-            position: sticky;
+            // margin: 0px 25px 0px 75px;     
+            position: absolute;
             // border: 3px dotted white;
         }
         
     }
 
-    .skills-container{
-        display: flex;
-        flex-direction: row;
-        min-height: 50vh;
-    }
-
-    .skills-list{
-        // background-color: #ffffff2d;
-        text-align: center;
-        margin: 2%;
-        padding: 0;
-        
-        .skills{
-            display: flex;
-            flex-direction: row;
-            gap: 2rem;
-            align-items: center;
-            justify-content: center;
-            padding: 0px 20px 20px 0px;
-        }
-
-
-        h1{
-            
-
-            // background-color: #ffffff82;
-            font-family: "Lato", sans-serif;
-            font-size: 55px;
-        
-        }
-
-        h3{
-            background-color: rgba(245, 245, 245, 0.517);
-        }
-
-        li{
-            list-style: none ;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-            background-color: #ffffff6b;
-            margin: 5px;
-            padding: 15px;
-            border-radius: 15px;
-            max-height: 1%;
-          
-
-            a{
-                padding: 10px;
-                border-radius: 20px;
-            
-                
-
-                font-family: 'Lato', sans-serif;
-                font-weight: 600;
-                font-style: italic;
-                background-color: $alert-color;
-                color: rgb(100, 62, 97);
-            }
-        }
-
-        i, .icon-react{
-            font-size: 75px;
-            margin: 15px;
-            padding: 2px;
-            color: $alert-color;
-            transition: all 0.3s;
-            
-        }
-
-        i:hover{
-            transform: translateY(-5px);
-        }
-        .icon-react:hover{
-            transform: translateY(-5px);
-        }
-
-    }
-
-    .skill-spline-sam{
-        background-color: #53bdff6a; //temp
-        width: 45%;
-        margin:2%;
-        border-radius: 30px;
-        display:grid;
-        justify-content: center;
-
-        text-align: center;
-
-        .error{
-            margin: 15px;
-            padding: 0;
-            color: $alert-color;
-            font-size: 200px;
-            
-        }
-    }
+ 
 }

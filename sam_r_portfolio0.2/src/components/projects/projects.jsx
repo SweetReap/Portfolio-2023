@@ -20,7 +20,7 @@ export default function Projects(){
         <div className="projects-container" data-aos="fade-down">
 
             <div className='games-container'>
-                <div className='dev-title'> <p>Games</p>  </div>
+                <div className='dev-title'> <p>Game Development</p>  </div>
 
                 <div className="project-box-container project-img1">
                     <h1>KAIJU ATTACK!</h1>
@@ -37,9 +37,10 @@ export default function Projects(){
                 </div>
                 <div className="project-box-container project-img3">
                     <h1>Evil Pot Thingy!</h1>
-                    <h3>A game about you falling and the Evil Plant!</h3>
-                    <iframe className='itch_banner' frameborder="0" src="https://itch.io/embed/404594?border_width=0&amp;bg_color=4b56eb&amp;link_color=d10312" width="206" height="165"><a href="https://sweet-apple-potatoes.itch.io/evil-pot-thingy">Evil Pot Thingy !</a></iframe>
                     <h2>Processing 3</h2> <h2>Aesprite</h2>
+                    <h3>A game about you falling and the Evil Plant!</h3>
+                    
+                    <iframe className='itch_banner' frameborder="0" src="https://itch.io/embed/404594?border_width=0&amp;bg_color=4b56eb&amp;link_color=d10312" width="206" height="165"><a href="https://sweet-apple-potatoes.itch.io/evil-pot-thingy">Evil Pot Thingy !</a></iframe>
                 </div>
             </div>
            

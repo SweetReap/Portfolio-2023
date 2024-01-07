@@ -6,11 +6,7 @@ import Projects from './components/projects/projects'
 import Home from './components/home/home'
 import {Route, Routes} from 'react-router-dom'
 
-
-
 function App() {
-
-  
 
   return (
     <div className="App">

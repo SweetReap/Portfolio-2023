@@ -1,5 +1,6 @@
 @import '../base-theme/colors.scss';
 @import '../base-theme/fonts.scss';
+@import '../base-theme/breakpoints.scss';
 
 *{
     box-sizing: border-box;
@@ -32,10 +33,17 @@ body{
         height: 100%;
         display: flex;
         align-items: center;
-        padding: .5rem;
+        padding: .7rem;
 
         font-family: 'Itim', cursive;
         font-size: 1.4rem;
+
+        @include media('<=phone'){
+            font-size: .9rem;
+        }
+        @include media('>=tablet'){
+            font-size: 1.5rem;
+        }
     }
 
     ul{

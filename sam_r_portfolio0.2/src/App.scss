@@ -1,11 +1,21 @@
 @import './components/base-theme/fonts.scss';
 @import './components/base-theme/colors.scss';
+@import './components/base-theme/breakpoints.scss';
+
+
 
 body{
   font-family: 'Karla', sans-serif;
   color: $dark-text;
-  display: flex;
+  display: block;
   justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  transition-duration: 1s;
+
+  overflow-x: hidden;
 }
 
 .loading-img{

@@ -7,7 +7,6 @@ import { useEffect } from 'react';
 
 import { Link } from 'react-router-dom';
 
-
 export default function Home(){
 
     useEffect(() =>{
@@ -27,7 +26,7 @@ export default function Home(){
                     <p className="small-txt-title">Hi! I'm...</p>
                     <div className='name-logo'>
                       <img src='./images/final-logo/SVG/fn-light.svg' height={'150px'}/>
-                      <img src='./images/final-logo/SVG/ln-light.svg' height={'150px'}/>
+                      <img src='./images/final-logo/SVG/ln-light.svg' className='last-name' height={'150px'}/>
                    </div>
                     <p className="role-title">Game Developer | Web Designer | Digital Artist</p>
                     {/* <hr/> */}
@@ -36,8 +35,8 @@ export default function Home(){
                         <br/> 
                         Along with that, I have a huge passion for game development, web design, and UI/UX design.
                         </p>
-                    <Link to="/about_me">
-                    <button className='about-me-more'>| Explore More |</button>
+                    <Link to="/projects">
+                    <button><p className='about-me-more'> EXPLORE MORE </p></button>
                     </Link>
                 </div>
 

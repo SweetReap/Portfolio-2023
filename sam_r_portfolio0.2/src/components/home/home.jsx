@@ -20,13 +20,14 @@ export default function Home(){
 
     return(
         
-        <div className="Container">
+        <div className="container">
             <div className='intro-container' data-aos="fade-down">
                 <div className="intro">
                     <p className="small-txt-title">Hi! I'm...</p>
                     <div className='name-logo'>
-                      <img src='./images/final-logo/SVG/fn-light.svg' height={'150px'}/>
-                      <img src='./images/final-logo/SVG/ln-light.svg' className='last-name' height={'150px'}/>
+                      {/* <img src='./images/final-logo/SVG/fn-light.svg' />
+                      <img src='./images/final-logo/SVG/ln-light.svg' /> */}
+                      <img src='./images/final-logo/SVG/my-name-light.svg' />
                    </div>
                     <p className="role-title">Game Developer | Web Designer | Digital Artist</p>
                     {/* <hr/> */}

@@ -54,9 +54,9 @@ export default function Projects(){
 
                         <div className="flyer-sample">
                             <div className="overlap-group">
-                                <img className="final-choice" alt="Quick-How-To" src="/dist/images/Lehman Account@0.75x.png" />
-                                <img className="financial-aid" alt="Financial Aid" src="/dist/images/financial-aid.png" />
-                                <img className="help-hub-flyer" alt="Help Hub" src="/dist/images/Idea-One.png" />
+                                <div className="img"></div>
+                                <div className="img"></div>
+                                <div className="img"></div>
                             </div>
                         </div>
                         <div className='lehman college logo' > Help</div>

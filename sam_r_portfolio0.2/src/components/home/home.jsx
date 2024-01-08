@@ -18,38 +18,49 @@ export default function Home(){
         });
     }, []);
 
-    return(
-        
-        <div className="Container">
+    const rotatingsquare = <div className='back'/>;
+    return (   
+        <div className="container">
+
+             <div className="spline-container" data-aos='fade-up'>
+                <div className="rotatingsquares">
+                    {rotatingsquare}
+                    {rotatingsquare}
+                    {rotatingsquare}
+                    {rotatingsquare}
+                    {rotatingsquare}
+                </div>
+                
+                <Spline_Sam />
+            </div>
+
             <div className='intro-container' data-aos="fade-down">
+
                 <div className="intro">
-                    <p className="small-txt-title">Hi! I'm...</p>
-                    <div className='name-logo'>
-                      <img src='./images/final-logo/SVG/fn-light.svg' height={'150px'}/>
-                      <img src='./images/final-logo/SVG/ln-light.svg' className='last-name' height={'150px'}/>
-                   </div>
-                    <p className="role-title">Game Developer | Web Designer | Digital Artist</p>
-                    {/* <hr/> */}
+
+                    <div className="intro-one">Hi! I Am</div>
+
+                    <div className='name-container'>
+                      <div className="name">
+                        Samantha Reape
+                      </div>
+                    </div>
+
+                    <div className="role-title">Game Developer | Web Designer | Digital Artist</div>
+
+                    <hr/>
                     <p className='about-me-short'>
                         I'm currently a student in NYC who strives to improve the user experience and create solutions to modern problems. 
                         <br/> 
                         Along with that, I have a huge passion for game development, web design, and UI/UX design.
-                        </p>
+                    </p>
+                    <hr />
                     <Link to="/projects">
-                    <button><p className='about-me-more'> EXPLORE MORE </p></button>
+                    <button> EXPLORE MORE </button>
                     </Link>
                 </div>
 
-                <div className="image-right-side" data-aos='fade-up' data-aos-delay='100'>
-                    <div className='container-spline-head'>
-                        <Spline_Sam />
-                    </div>
-                </div>
             </div>
-
-   
-
-        </div>
-        
+        </div>      
     );
 }

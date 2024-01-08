@@ -6,64 +6,40 @@
     box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-    background-color: $bkg-color;
-}
-
-.nav-bar{
-    background-color: $bkg-color;
-    color: white;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    padding: .2rem;
-
-    .page-title{
-        font-size: 25px;
-        
-    }
-
-
-    a{
-        color: inherit;
-        text-decoration: none;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        padding: .7rem;
-
-        font-family: 'Itim', cursive;
-        font-size: 1.4rem;
-
-        @include media('<=phone'){
-            font-size: .9rem;
-        }
-        @include media('>=tablet'){
-            font-size: 1.5rem;
-        }
-    }
-
+nav{
+    display:flex;
     ul{
-        padding: 0;
+        list-style-type: none;
         margin: 0;
-        list-style: none;
+        padding: 0;
+        overflow: hidden;
         display: flex;
-        gap: 15px;
+        flex-direction: row;
+
+        width: 75%;
+        li{
+            padding: 0;
+            list-style-type: none;
+            margin: 0;
+            a{
+                display: block;
+                color: $light-text;
+                text-decoration: none;
+                padding: 20px 20px;
+            }     
+        }
     }
 
-    li.active{
-        background-color: #1e1e1e3a;
-        
+    .contact-div{
+        // position: absolute;
+        width: 25%;
+        // background-color: blue;
+        ul{
+            li{
+                font-size: 1.5rem;
+                padding: 25px 15px;
+                color: $alert-color-d;
+            }
+        }
     }
-
-    li:hover{
-        background-color: $box-color;
-        border-radius: 15px;
-    }
-
-
-
 }

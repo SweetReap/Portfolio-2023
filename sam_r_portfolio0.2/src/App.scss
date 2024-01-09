@@ -2,8 +2,15 @@
 @import './components/base-theme/colors.scss';
 @import './components/base-theme/breakpoints.scss';
 
+$animation-time: 1s;
 
+<<<<<<< Updated upstream
 :root{
+=======
+
+<<<<<<< Updated upstream
+body{
+>>>>>>> Stashed changes
   font-family: 'Karla', sans-serif;
   background-color: $bkg-color-d; 
   color: $main-color;
@@ -11,5 +18,14 @@
   overflow-x: hidden;
   overflow-y:scroll;
 
+<<<<<<< Updated upstream
   font-size: 15px;
+=======
+.loading-img{
+  margin-left: 28%;
+=======
+  --animation-time: $animation-time;
+  font-size: 15px;
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 }

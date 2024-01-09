@@ -3,10 +3,13 @@
 @import './components/base-theme/breakpoints.scss';
 
 
-html{
+:root{
   font-family: 'Karla', sans-serif;
   background-color: $bkg-color-d; 
   color: $main-color;
   transition-duration: .5s;
   overflow-x: hidden;
+  overflow-y:scroll;
+
+  font-size: 15px;
 }

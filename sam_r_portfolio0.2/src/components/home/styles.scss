@@ -3,18 +3,20 @@
  @import '../base-theme/breakpoints.scss';
 
 
+
  body{
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
+    transition: all 2.5s linear;
  }
 
  .container{
-    // background-color: $alert-color-d;
+    // background-color: $main-color;
     // width: 90%;
     display: flex;
     flex-direction: row;
-    padding: 2%;
+    padding: .2rem;
 
     position: absolute;
     
@@ -22,7 +24,7 @@
         // background-color: $dark-text;
         border-radius: 100%;
         width: 100%;
-        height: 700px;
+        height: 75rem;
         // overflow: hidden;
 
         .rotatingsquares{
@@ -34,48 +36,91 @@
                 -webkit-animation: spin 4s linear infinite;
                 -moz-animation: spin 4s linear infinite;
                 animation: spin 4s linear infinite;  
-                width: 600px;
-                height: 600px;
-            }
-            :nth-child(odd){
-                left: 155px;
-                animation: spin 3.5s linear infinite;
-            }
-            :nth-child(2n+1){
-                left: 105px;
-                top: 12%;
-                animation: spin 5.5s linear infinite;
-                opacity: 25%;
+                width: 40rem;
+                height: 40rem;
             }
             :nth-child(even){
-                left: 125px;
-                top:25px;
-                width: 600px;
-                height: 600px;
+                left: 155px;
+                animation: spin 3.5s linear infinite;
                 background-color: $dark-text;
-                animation: spin 9s linear infinite;
+            }
+            :nth-child(odd){
+                left: 225px;
+                top: 12%;
+                animation: spin 5.5s ease-in-out infinite;
+                opacity: 25%;
+            }
+            :nth-child(2n+2){
+                left: 5rem;
+                top: 25rem;
+                width: 20%;
+                height: 20%;
+                background-color: $alert-color;
+                animation: spin 5.5s linear infinite;
+                opacity: 45%;
+            }
+            :nth-child(2n+3){
+                left: 325px;
+                top:25px;
+                width: 25rem;
+                height: 25rem;
+                background-color: $dark-text;
+                animation: spin 3s linear infinite;
             }
         }
 
-       
     }
-
     .intro{
-        margin-top: 50%;
+        margin-top: 25rem;
+        position: sticky;
+        margin-left: -1rem;
         justify-content: center;
         align-items: center;
-        // background-color: $alert-color-d;
+        
+        height: 100%;
+    
+        .intro-one{
+            margin: .5rem;
+            font-size: 1.5rem;
+        }
 
         .name{
-            margin: 15px 5px;
-            padding: 25px 5px;
+            // margin: .5rem .5rem;
+            padding-bottom: 1rem;
             border-radius: 45px;
-            background-color: $alert-color-d;
+            // background-color: $alert-color-d;
             color: $alert-color;
 
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 45px;
-            text-align: center;
+            font-family: "Itim", sans-serif;
+            font-size: 3rem;
+            text-align: left;
+
+
+            span{
+                transition: transform 1.5s linear;
+                padding: 1px;
+            }:hover{
+                color: $bkg-color;
+                transform: rotateX(15deg);
+                -webkit-transform: rotateX(15deg);
+
+            }
+            
+        }
+    }
+    hr{
+        border: 0;
+        height: 1px;
+        background: #333;
+        background-image: linear-gradient(to left, #00000000, $alert-color);
+    }
+
+    .span-wid{
+        font-size: 1.5rem;
+
+        .desc{
+            font-size: 1rem;
+            font-family: "Lato";
         }
     }
  }

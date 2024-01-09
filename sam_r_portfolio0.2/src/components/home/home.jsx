@@ -29,6 +29,11 @@ export default function Home(){
                     {rotatingsquare}
                     {rotatingsquare}
                     {rotatingsquare}
+                    {rotatingsquare}
+                    {rotatingsquare}
+                    {rotatingsquare}
+                    {rotatingsquare}
+                    {rotatingsquare}
                 </div>
                 
                 <Spline_Sam />
@@ -42,7 +47,20 @@ export default function Home(){
 
                     <div className='name-container'>
                       <div className="name">
-                        Samantha Reape
+                        <span>S</span>
+                        <span>a</span>
+                        <span>m</span>
+                        <span>a</span>
+                        <span>n</span>
+                        <span>t</span>
+                        <span>h</span>
+                        <span>a</span>
+                        <span> </span>
+                        <span>R</span>
+                        <span>e</span>
+                        <span>a</span>
+                        <span>p</span>
+                        <span>e</span>
                       </div>
                     </div>
 
@@ -55,8 +73,20 @@ export default function Home(){
                         Along with that, I have a huge passion for game development, web design, and UI/UX design.
                     </p>
                     <hr />
+
+                    <div className="span-wid">
+                        WHAT I DO
+                        <div className="span-wid desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quidem <br /> corrupti ullam alias possimus aperiam cum saepe dignissimos repellendus facilis officiis optio eaque nemo laudantium nesciunt voluptate expedita excepturi sed.</div>
+                    </div>
+
+                    <hr />
+                    <div className="span-wid">
+                        WHAT I VALUE
+                        <div className="span-wid desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quidem corrupti ullam alias possimus aperiam cum saepe dignissimos <br /> repellendus facilis officiis optio eaque nemo laudantium nesciunt voluptate expedita excepturi sed.</div>
+                    </div>
+                    <hr />
                     <Link to="/projects">
-                    <button> EXPLORE MORE </button>
+                    <button> EXPLORE PROJECTS </button>
                     </Link>
                 </div>
 

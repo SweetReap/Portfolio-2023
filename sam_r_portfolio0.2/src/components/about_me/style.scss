@@ -4,6 +4,10 @@
 
 $curr-color: #000000;
 
+@mixin pretty-hover{
+        color: $bkg-color;
+}
+
 @mixin icon-style($bkg-color){
     background-color: $bkg-color;
     padding: 1.5rem;
@@ -12,12 +16,12 @@ $curr-color: #000000;
     align-self: center;
     justify-content: center;
 
-    transition: 50ms ease-in all;
+    transition: 200ms ease-in all;
 }
 
 @mixin icon-hover($bkg-color, $width, $hue-change){
     background-color: adjust-color($color: $bkg-color, $hue: $hue-change, $saturation: 5%, $lightness: 2%, $alpha: 1.0);
-    transform: translateX($width) ;
+    transform: translateY($width) ;
 }
 
 body{
@@ -49,8 +53,13 @@ body{
         .section{
             font-size: 3rem;
             width: 100%;
-            background-color: rgba(248, 248, 255, 0.335);
+            // background-color: rgba(248, 248, 255, 0.335);
             position: static;
+            color: $alert-color;
+
+            font-family: "Itim", sans-serif;
+        }span:hover{
+            @include pretty-hover();
         }
         .skills ul{
             display: flex;
@@ -72,7 +81,7 @@ body{
                 align-items: center;
                 @include icon-style($alert-color);
             }.icon-react:hover{
-                @include icon-hover($alert-color, 6rem, 25);
+                @include icon-hover($alert-color, -5px, 25);
             }
            
         }

@@ -10,16 +10,21 @@ export default function About_Me(){
 
     return(
         <div className='skills-container' data-aos="fade-down">
-            <div className='spline-jewel'>
+            {/* <div className='spline-jewel'>
             <Spline_Jewel/>
-            </div>
+            </div> */}
         
         <div className='list' data-aos="flip-down">
                 
                 
                     <hr />
-                    <div className="section">TOOLS</div>
-
+                    <div className="section">
+                        <span>T</span>
+                        <span>O</span>
+                        <span>O</span>
+                        <span>L</span>
+                        <span>S</span>
+                    </div>
                     <div className='skills'>
                         <ul data-aos="fade-down">   
                             <li>

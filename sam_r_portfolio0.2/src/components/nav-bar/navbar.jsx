@@ -9,14 +9,23 @@ export default function Navbar(){
         </Link>
         <ul>
              <li>
-                <Link to="/">Home</Link>
+                <Link to="/">
+                    <i class="fa-solid fa-house-user"></i>
+                    Home
+                </Link>
             </li>
             <li>
-                <Link to="/projects">Projects</Link>
+                <Link to="/projects">
+                    <i class="fa-solid fa-note-sticky"></i>
+                    Projects
+                </Link>
             </li> 
          
             <li>
-                <Link to="/about_me">About Me</Link>
+                <Link to="/about_me">
+                    <i class="fa-solid fa-user-secret"></i>
+                    About Me
+                </Link>
             </li>
         </ul>
         <div className='contact-div'>
@@ -27,7 +36,7 @@ export default function Navbar(){
         </div>
         {/* <div className='color-theme-toggle'>
             <p>Color Mode</p>
-            <button>Light</button>
+            <button>0</button>
         </div> */}
     </nav>
     )

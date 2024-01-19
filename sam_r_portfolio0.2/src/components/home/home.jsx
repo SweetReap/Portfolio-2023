@@ -74,17 +74,7 @@ export default function Home(){
                     </p>
                     <hr />
 
-                    <div className="span-wid">
-                        WHAT I DO
-                        <div className="span-wid desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quidem <br /> corrupti ullam alias possimus aperiam cum saepe dignissimos repellendus facilis officiis optio eaque nemo laudantium nesciunt voluptate expedita excepturi sed.</div>
-                    </div>
-
-                    <hr />
-                    <div className="span-wid">
-                        WHAT I VALUE
-                        <div className="span-wid desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quidem corrupti ullam alias possimus aperiam cum saepe dignissimos <br /> repellendus facilis officiis optio eaque nemo laudantium nesciunt voluptate expedita excepturi sed.</div>
-                    </div>
-                    <hr />
+                   
                     <Link to="/projects">
                     <button> EXPLORE PROJECTS </button>
                     </Link>

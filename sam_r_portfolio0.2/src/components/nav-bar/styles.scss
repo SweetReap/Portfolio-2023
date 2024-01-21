@@ -9,7 +9,10 @@
 .nav-bar{
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+
+    // background-color: aliceblue;
 
     ul{
         list-style-type: none;
@@ -39,6 +42,8 @@
             }
         }:hover{
             color: $alert-color;
+        }::after{
+            color: $alert-color;
         }
     }
 
@@ -51,6 +56,8 @@
                 font-size: 1.5rem;
                 padding: 25px 15px;
                 color: $alert-color-d;
+            }:hover{
+                color: $main-color-d;
             }
         }
     }

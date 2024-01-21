@@ -4,22 +4,32 @@
 @import "../base-theme/dark-theme.scss";
 // @import url('src/App.scss');
 
+.background {
+  background-image: url("public/images/layered-waves-haikei.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: fixed;
+  z-index: -5;
+  width: 100%;
+  height: 100%;
+}
+
 .projects-container {
   width: 95%;
   display: grid;
   place-items: center;
 
-  // .hidden {
-  //   visibility: hidden;
-  // }
+  .hidden {
+    display: none;
+  }
 
   .visible {
-    visibility: visible;
+    display: block;
   }
 
   .dev-title {
     width: 65%;
-    background-color: rgba(4, 3, 40, 0.25);
+    background-color: rgba(4, 3, 40, 0.75);
     padding: 0.6rem;
 
     display: flex;
@@ -30,16 +40,20 @@
     color: rgb(233, 233, 233);
 
     .dropdown-arrow {
+      // transform: rotateX(180deg);
+      opacity: 65%;
+      cursor: pointer;
+    }
+    .up {
       transform: rotateX(180deg);
       color: $main-color-d;
-      opacity: 65%;
     }
   }
 }
 
 .project-container {
   width: 65%;
-  background-color: #00000047;
+  background-color: #0a041fb9;
   padding: 0 10rem 0 10rem;
   flex-wrap: wrap;
 
@@ -47,32 +61,53 @@
     font-size: 1.1rem;
     font-weight: 600;
   }
-  .projectDesc{
+  .projectDesc {
     font-weight: 300;
-   
-    .images{
+
+    .images {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
 
       padding: 1rem;
-      img{
+      img {
         height: 15rem;
-        padding: .4rem;
+        padding: 0.4rem;
         // background-color: #00000069;
       }
     }
-    span{
-      margin: .2rem;
-      // padding: .2rem;
+    span {
+      font-weight: 200;
+      // margin: .4rem;
+      // padding: 1.2rem;
     }
-    .button{
-      button{
+
+    .tools {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      margin-bottom: 0.5rem;
+
+      .tool {
+        font-weight: 600;
+        background-color: $alert-color;
+        padding: 0.5rem 0.9rem;
+        border-radius: 5px;
+      }
+    }
+
+    .button {
+      margin: 1rem;
+      float: right;
+      button {
         transition: all 2s ease-in;
         @include button-dark;
-      }::after{
+      }
+      ::after {
         @include button-dark-after;
-      }:hover::after{
+      }
+      :hover::after {
         background-color: $alert-color-butt-after;
       }
     }
@@ -85,3 +120,5 @@ hr {
   background: #333;
   background-image: linear-gradient(to left, #00000000, $alert-color);
 }
+
+//animation for background

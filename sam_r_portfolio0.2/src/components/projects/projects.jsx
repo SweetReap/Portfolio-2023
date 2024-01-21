@@ -2,8 +2,8 @@ import "./styles.scss";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
-// import Lehman_Project_Popup from '../lehman project/Lehman_Project_Popup';
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
   useEffect(() => {
@@ -15,42 +15,56 @@ export default function Projects() {
     });
   }, []);
 
+  const [show, setShow] = useState(false);
+
+  //svg import
+
   return (
     //TODO: create a component for the projects that will read from one JSON file.
     <div>
-      <div className="projects-container" data-aos="fade-up">
+      <div className="background"></div>
+      <div className="projects-container">
         <div className="dev-title">
           Game Development
-          <div className="dropdown-arrow">^</div>
+          <div
+            className={show ? "dropdown-arrow up" : "dropdown-arrow"}
+            onClick={() => setShow(!show)}
+          >
+            ^
+          </div>
         </div>
-        <div className="project-container hidden">
+        <div className="project-container">
           <hr />
           <div className="itch">
             <div className="title">Itch.io Showcase</div>
             <div className="projectDesc">
               <div className="images">
-                <img src="public/images/project-files/jC7LQi.gif" alt="" />
+                <img src="/images/project-files/jC7LQi.gif" alt="" />
                 <img
-                  src="public/images/project-files/kaiju_jamv3_1.gif"
+                  src="/images/project-files/kaiju_jamv3_1.gif"
                   alt="game-display-gif-kaiju-attack"
                 />
-                <img
-                  src="public/images/project-files/kaiju_jamv2_0.gif"
-                  alt=""
-                />
-                <img
-                  src="public/images/project-files/jumpingman_1.gif"
-                  alt=""
-                />
+                <img src="/images/project-files/kaiju_jamv2_0.gif" alt="" />
+                <img src="/images/project-files/jumpingman_1.gif" alt="" />
+              </div>
+              <div className="tools">
+                <div className="tool">PICO-8 | LUA</div>
+                <div className="tool">Aesprite</div>
+                <div className="tool">Adobe Photoshop</div>
+                <div className="tool">Object Oriented Programming</div>
               </div>
               <span>
-                Take a look at the projects I've worked on and collaborated in!
-                It might look very empty now, but soon, there will be so many
-                little projects here that you will enjoy!
+                Included in this section are my all of the{" "}
+                <b>released game prototypes</b> on Itch.IO Take a look at the
+                projects I've worked on and collaborated in!
               </span>
-              <div className="button">
+
+              <Link
+                to="https://sweet-apple-potatoes.itch.io"
+                className="button"
+              >
                 <button>ITCH.IO PROFILE</button>
-              </div>
+              </Link>
             </div>
           </div>
           <hr />
@@ -58,9 +72,14 @@ export default function Projects() {
 
         <div className="dev-title">
           Visual Design | Instructional Development
-          <div className="dropdown-arrow">^</div>
+          <div
+            className={show ? "dropdown-arrow up" : "dropdown-arrow"}
+            onClick={() => setShow(!show)}
+          >
+            ^
+          </div>
         </div>
-        <div className="project-container hidden">
+        <div className="project-container">
           <hr />
           <div className="lehman">
             <div className="title">
@@ -69,19 +88,32 @@ export default function Projects() {
 
             <div className="projectDesc">
               <div className="images">
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+                <img
+                  src="/images/project-files/lehmantitleimg.png"
+                  alt="lehman-title-image"
+                />
+              </div>
+              <div className="tools">
+                <div className="tool">Adobe Illustrator</div>
+                <div className="tool">Adobe After Effects</div>
+                <div className="tool">Adobe Photoshop</div>
+                <div className="tool">Camtasia</div>
+                <div className="tool">Adobe XD</div>
+                <div className="tool">Peoplesoft</div>
               </div>
               <span>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-                perferendis repellat, ex tenetur quod ipsum consequuntur enim
-                facere vel impedit doloribus quos corrupti aspernatur architecto
-                id dolore omnis mollitia aperiam.
+                I've worked on many{" "}
+                <b>educational and promotional materials </b>
+                for the <b>Student Success Initiatives</b> team. While being
+                lightly supervised by the Director and Assistant Director of the
+                team, many{" "}
+                <b>flyers, videos, and interactive eLearning modules </b>were
+                designed and developed to ease the learning curve of newly
+                updated online learning platforms.
               </span>
-              <div className="button">
+              <Link to="/lehman" className="button">
                 <button>EXPLORE</button>
-              </div>
+              </Link>
             </div>
           </div>
           <hr />
@@ -89,25 +121,49 @@ export default function Projects() {
 
         <div className="dev-title">
           Web Development
-          <div className="dropdown-arrow">^</div>
+          <div
+            className={show ? "dropdown-arrow up" : "dropdown-arrow"}
+            onClick={() => setShow(!show)}
+          >
+            ^
+          </div>
         </div>
-        <div className="project-container hidden">
+        <div className="project-container">
           <hr />
           <div className="gnnyc">
             <div className="title">Graffiti n' NYC | In Development</div>
             <div className="projectDesc">
               <div className="images">
-                <img src="" alt="" />
+                <img src="/images/project-files/screenshot_gnnyc.png" alt="" />
+              </div>
+              <div className="tools">
+                <div className="tool">Adobe Photoshop</div>
+                <div className="tool">Vanilla JavaScript</div>
+                <div className="tool">HTML & CSS</div>
+                <div className="tool">API Implementation</div>
               </div>
               <span>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
-                nostrum nobis accusantium corrupti id consequuntur natus
-                quisquam. Amet alias praesentium exercitationem architecto at
-                omnis eum nisi numquam, recusandae aliquam commodi.
+                I participated in{" "}
+                <b>Lehman's 2023 Hackathon partnered with Postman.</b> My team
+                was tasked for 5 hours to develop an API intergrated tool with
+                New Yorkers in mind. <br /> We developed a
+                <b> vanilla JavaScript</b> web application that searches for art
+                galleries based on the user's inputted zipcode.
+                <b>
+                  Google Javascript Maps API and OpenNYC API were intergrated
+                  into the app.
+                </b>
               </span>
-              <div className="button">
+              <p className="footnote">
+                This website is still in development, and we will be continuing
+                to add multiple features to the app.
+              </p>
+              <Link
+                to="https://cheerful-croissant-7943f1.netlify.app/"
+                className="button"
+              >
                 <button>Link to Webpage</button>
-              </div>
+              </Link>
             </div>
           </div>
           <hr />
@@ -115,9 +171,14 @@ export default function Projects() {
 
         <div className="dev-title">
           Software Development
-          <div className="dropdown-arrow">^</div>
+          <div
+            className={show ? "dropdown-arrow up" : "dropdown-arrow"}
+            onClick={() => setShow(!show)}
+          >
+            ^
+          </div>
         </div>
-        <div className="project-container hidden">
+        <div className="project-container">
           <hr />
           <div className="java project-one">
             <div className="title">
@@ -125,18 +186,25 @@ export default function Projects() {
             </div>
             <div className="projectDesc">
               <div className="images">
-                <img src="" alt="" />
-                <img src="" alt="" />
+                <img
+                  src="/images/project-files/snapshot_java.png"
+                  alt="minesweeper-snapshot"
+                />
+              </div>
+              <div className="tools">
+                <div className="tool">Java</div>
+                <div className="tool">Object Oriented Programming</div>
               </div>
               <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                consequuntur iusto amet vitae totam sit sunt repellendus
-                suscipit aliquam voluptatibus libero ratione dolore
-                necessitatibus molestias quisquam, iste praesentium sequi eaque.
+                Developed a minesweeper game using Java (swing and awt gui
+                libraries). Focuses heavily on OOP techniques.
               </span>
-              <div className="button">
+              <Link
+                to="https://github.com/SweetReap/Minesweeper-JAVA"
+                className="button"
+              >
                 <button>Link to GitHub Repo</button>
-              </div>
+              </Link>
             </div>
           </div>
           <hr />

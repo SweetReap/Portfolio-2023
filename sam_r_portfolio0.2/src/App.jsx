@@ -1,4 +1,5 @@
 import './App.scss'
+import Lehman from './components/lehman project/Lehman.jsx'
 import About_Me from './components/about_me/about-me'
 import Contact_Me from './components/contact_me/contact-me'
 import Navbar from './components/nav-bar/navbar.jsx'
@@ -17,6 +18,7 @@ function App() {
           <Route path = "/about_me" element = {<About_Me />} />
           <Route path = "/contact_me" element = {<Contact_Me />} />
           <Route path = "/projects" element = {<Projects />} />
+          <Route path= "/lehman" element = {<Lehman/>}/>
       </Routes>
       </div>
      

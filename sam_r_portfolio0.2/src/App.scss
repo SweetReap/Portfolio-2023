@@ -2,7 +2,7 @@
 @import './components/base-theme/colors.scss';
 @import './components/base-theme/breakpoints.scss';
 
-$animation-time: 1s;
+$animation-time: .3s;
 
 
 :root{
@@ -10,7 +10,7 @@ $animation-time: 1s;
   font-family: 'Karla', sans-serif;
   background-color: $bkg-color-d; 
   color: $main-color;
-  transition-duration: .5s;
+  transition-duration: .5ms;
   overflow-x: hidden;
   overflow-y:scroll;
 

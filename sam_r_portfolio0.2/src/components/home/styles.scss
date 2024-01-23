@@ -10,6 +10,7 @@ body {
     transition: all 2.5s linear;
 }
 
+
 .container {
     // background-color: $main-color;
     // width: 90%;
@@ -17,7 +18,8 @@ body {
     flex-direction: row;
     padding: 0.2rem;
 
-    position: absolute;
+    // flex-wrap: wrap;
+    // position: absolute;
 
     .spline-container {
         // background-color: $dark-text;
@@ -104,12 +106,7 @@ body {
             }
         }
     }
-    hr {
-        border: 0;
-        height: 1px;
-        background: #333;
-        background-image: linear-gradient(to left, #00000000, $alert-color);
-    }
+   
 
     .span-wid {
         font-size: 1.5rem;
@@ -124,7 +121,7 @@ body {
         font-size: 1.5rem;
     }
 
-    b{
+    b {
         color: $alert-color;
     }
     .button {
@@ -141,6 +138,27 @@ body {
             background-color: $alert-color-butt-after;
         }
     }
+
+    .loading {
+        display: flex;
+        font-size: 3rem;
+        justify-content: center;
+        align-items: center;
+        animation: loading-fade ease-in-out 5s;
+        animation-fill-mode: forwards;
+    }
+    ::after {
+        display: none;
+    }
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to left, #00000000, $alert-color);
+
+    background-color: antiquewhite;
+    margin: 2rem 0rem;
 }
 
 @-moz-keyframes spin {
@@ -157,5 +175,36 @@ body {
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
+    }
+}
+
+@keyframes loading-fade {
+    0% {
+        opacity: 0%;
+        display: block;
+    }
+    20% {
+        opacity: 100%;
+        transform: rotate(90deg);
+    }
+    25% {
+        //testing gap
+    }
+
+    30% {
+        opacity: 20%;
+    }
+    65% {
+        opacity: 100%;
+    }
+    75% {
+        opacity: 20%;
+    }
+    90% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+        display: none;
     }
 }

@@ -27,12 +27,12 @@ export default function Navbar() {
           </Link>
         </li>
 
-        <li>
+        {/* <li>
           <Link to="/about_me">
             <i class="fa-solid fa-user-secret"></i>
             About Me
           </Link>
-        </li>
+        </li> */}
       </ul>
       <div className="contact-div">
         <ul>

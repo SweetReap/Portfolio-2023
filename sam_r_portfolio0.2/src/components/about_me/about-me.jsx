@@ -11,42 +11,14 @@ import { FaReact, FaJava } from "react-icons/fa6";
 import "./style.scss";
 
 import "aos/dist/aos.css";
-import Spline_Jewel from "../../assets/3D/spline_jewel";
+import Spline_Sam_Two from "../../assets/3D/spline_jewel_2";
+// import Spline_Jewel from "../../assets/3D/spline_jewel";
 
 export default function About_Me() {
+  const rotatingsquare = <div className="back" />;
+
   return (
-    <div className="skills-container" data-aos="fade-down">
-      <div className="about-me-span">
-        <div className="span-wid">
-          WHAT I DO
-          <div className="span-wid desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-            quidem <br /> corrupti ullam alias possimus aperiam cum saepe
-            dignissimos repellendus facilis officiis optio eaque nemo laudantium
-            nesciunt voluptate expedita excepturi sed.
-          </div>
-        </div>
-
-        <hr />
-        <div className="span-wid">
-          WHAT I VALUE
-          <div className="span-wid desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-            quidem corrupti ullam alias possimus aperiam cum saepe dignissimos{" "}
-            <br /> repellendus facilis officiis optio eaque nemo laudantium
-            nesciunt voluptate expedita excepturi sed.
-          </div>
-        </div>
-        <hr />
-        <span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eum
-          perferendis culpa reiciendis repellendus omnis, modi pariatur magni
-          voluptates eveniet enim! Debitis accusantium est ab culpa quibusdam
-          quasi, accusamus obcaecati.
-        </span>
-        <hr />
-
-      </div>
+    <div className="skills-container" data-aos="zoom-out">
       <div className="list" data-aos="flip-down">
         <hr />
         <div className="section">
@@ -63,21 +35,21 @@ export default function About_Me() {
               <a>React.JS</a>
             </li>
 
-            <li>
+            {/* <li>
               <SiUnity className="icon-react" />
               <a>Unity</a>
-            </li>
+            </li> */}
             <li>
               <SiAdobephotoshop className="icon-react" />
-              <a>Adobe Photoshop</a>
+              <a>Photoshop</a>
             </li>
             <li>
               <SiAdobeillustrator className="icon-react" />
-              <a>Adobe Illustrator</a>
+              <a> Illustrator</a>
             </li>
             <li>
               <SiAdobeaftereffects className="icon-react" />
-              <a>Adobe After Effects</a>
+              <a> After Effects</a>
             </li>
           </ul>
         </div>
@@ -105,8 +77,13 @@ export default function About_Me() {
               <a>JavaScript</a>
             </li>
             <li>
-              <SiCsharp className="icon-react" />
-              <a>C-Sharp</a>
+              <img
+                src="/images/lua.svg"
+                alt="lua-logo"
+                className="icon-react"
+                width={"70px"}
+              />
+              <a>LUA</a>
             </li>
             <li>
               <SiProcessingfoundation className="icon-react" />
@@ -115,6 +92,55 @@ export default function About_Me() {
           </ul>
         </div>
       </div>
+      <div className="about-me-span">
+        <div className="span-wid">
+          WHAT I DO
+          <div className="span-wid desc">
+            I develop mini-games, web applications, and create motion graphic
+            videos. Anything that involves digital art peaks my interests! I
+            also make digital illustrations - either character design or concept
+            art.
+          </div>
+        </div>
+
+        <hr />
+        <div className="span-wid">
+          WHAT I VALUE
+          <div className="span-wid desc">
+            Emotion, Consistency, Accessibility, and using tools at my disposal
+            to bring out the Character in my projects.
+          </div>
+        </div>
+        <hr />
+        <span className="desc">
+          I love to explore variations of digital visual art mediums. Whether
+          it's graphic design, fine art illustration, or motion graphics, I
+          enjoy using all of them.
+        </span>
+        <hr />
+      </div>
+      {/* <div className="fun-facts">
+        <hr />
+        <div className="fun-fact title">FUN FACTS</div>
+        <span>Cat Lover, Fountain Pen Collector, and a Big Dreamer!</span>
+        <img
+          src="/images/pen.png"
+          alt="fountain pen"
+          width={"100px"}
+          className="pen"
+        />
+      </div> */}
+      {/* <div className="canvas">
+        <div className="rotatingsquares">
+          {rotatingsquare}
+          {rotatingsquare}
+          {rotatingsquare}
+
+          {rotatingsquare}
+          {rotatingsquare}
+        </div>
+        <Spline_Sam_Two />
+      </div> */}
     </div>
   );
 }

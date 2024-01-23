@@ -12,7 +12,7 @@ $animation-time: .3s;
   color: $main-color;
   transition-duration: .5ms;
   overflow-x: hidden;
-  overflow-y:scroll;
+  overflow-y:visible;
 
   --animation-time: $animation-time;
   font-size: 15px;

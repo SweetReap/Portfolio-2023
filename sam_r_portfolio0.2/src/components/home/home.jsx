@@ -1,3 +1,4 @@
+
 import Spline_Sam from "../../assets/3D/spline_sam";
 import "./styles.scss";
 
@@ -61,7 +62,6 @@ export default function Home() {
                 <span>p</span>
                 <span>e</span>
               </div>
-            </div>
 
             <div className="role-title">
               Game Developer | React.JS Developer | Java Developer | Digital

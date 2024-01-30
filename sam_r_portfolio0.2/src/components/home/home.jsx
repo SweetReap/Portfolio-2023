@@ -84,8 +84,9 @@ export default function Home() {
         </div>
       </div>
       <hr />
-      <About_Me />
+      
     </div>
+    <About_Me />
     </div>
   );
 }

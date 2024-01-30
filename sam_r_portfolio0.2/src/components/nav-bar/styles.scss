@@ -1,20 +1,25 @@
-@import '../base-theme/colors.scss';
-@import '../base-theme/fonts.scss';
-@import '../base-theme/breakpoints.scss';
+@import "../base-theme/colors.scss";
+@import "../base-theme/fonts.scss";
+@import "../base-theme/breakpoints.scss";
 
-*{
+* {
     box-sizing: border-box;
 }
 
-.nav-bar{
-    display:flex;
+.nav-bar {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
 
-    // background-color: aliceblue;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
 
-    ul{
+    background-color: $bkg-color-d;
+    z-index: 4;
+
+    ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -23,40 +28,43 @@
         flex-direction: row;
 
         width: 100%;
-        li{
+        li {
             transition: all 40ms ease-in-out;
             padding: 0;
             list-style-type: none;
             margin: 0;
             justify-self: center;
-            a{
+            a {
                 display: block;
                 color: $light-text;
                 text-decoration: none;
                 padding: 20px 20px;
-            } 
-            
-            i{
-                padding: .5rem;
+            }
+
+            i {
+                padding: 0.5rem;
                 font-size: 1.2rem;
             }
-        }:hover{
+        }
+        :hover {
             color: $alert-color;
-        }::after{
+        }
+        ::after {
             color: $alert-color;
         }
     }
 
-    .contact-div{
+    .contact-div {
         // position: absolute;
         width: 25%;
         // background-color: blue;
-        ul{
-            li{
+        ul {
+            li {
                 font-size: 1.5rem;
                 padding: 25px 15px;
                 color: $alert-color-d;
-            }:hover{
+            }
+            :hover {
                 color: $main-color-d;
             }
         }

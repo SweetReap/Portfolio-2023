@@ -124,21 +124,7 @@ body {
     b {
         color: $alert-color;
     }
-    .button {
-        margin: 1rem;
-        float: left;
-        button {
-            transition: all 2s ease-in;
-            @include button-dark;
-        }
-        ::after {
-            @include button-dark-after;
-        }
-        :hover::after {
-            background-color: $alert-color-butt-after;
-        }
-    }
-
+ 
     .loading {
         display: flex;
         font-size: 3rem;
@@ -151,15 +137,7 @@ body {
         display: none;
     }
 }
-hr {
-    border: 0;
-    height: 1px;
-    background: #333;
-    background-image: linear-gradient(to left, #00000000, $alert-color);
 
-    background-color: antiquewhite;
-    margin: 2rem 0rem;
-}
 
 @-moz-keyframes spin {
     100% {

@@ -17,8 +17,6 @@ export default function Projects() {
 
   const [show, setShow] = useState(false);
 
-  
-
   return (
     //TODO: create a component for the projects that will read from one JSON file.
     <div data-aos="fade-in">
@@ -35,7 +33,7 @@ export default function Projects() {
               patternUnits="userSpaceOnUse"
               width="50"
               height="100"
-              patternTransform="scale(3) rotate(80)"
+              patternTransform="scale(5) rotate(80)"
             >
               <rect
                 x="0"
@@ -69,6 +67,46 @@ export default function Projects() {
         </svg>
       </div>
       <div className="projects-container">
+        <div className="dev-title">
+          Software Development
+          <div
+            className={show ? "dropdown-arrow up" : "dropdown-arrow"}
+            onClick={() => setShow(!show)}
+          >
+            ^
+          </div>
+        </div>
+        <div className="project-container">
+          <hr />
+          <div className="java project-one">
+            <div className="title">
+              Minesweeper | Object Oriented Programming
+            </div>
+            <div className="projectDesc">
+              <div className="images">
+                <img
+                  src="/images/project-files/snapshot_java.png"
+                  alt="minesweeper-snapshot"
+                />
+              </div>
+              <div className="tools">
+                <div className="tool">Java</div>
+                <div className="tool">Object Oriented Programming</div>
+              </div>
+              <span>
+                Developed a minesweeper game using Java (swing and awt gui
+                libraries). Focuses heavily on OOP techniques.
+              </span>
+              <Link
+                to="https://github.com/SweetReap/Minesweeper-JAVA"
+                className="button"
+              >
+                <button>Link to GitHub Repo</button>
+              </Link>
+            </div>
+          </div>
+          <hr />
+        </div>
         <div className="dev-title">
           Game Development
           <div
@@ -116,7 +154,7 @@ export default function Projects() {
         </div>
 
         <div className="dev-title">
-          Visual Design | Instructional Development
+          {/* Visual Design | Instructional Development
           <div
             className={show ? "dropdown-arrow up" : "dropdown-arrow"}
             onClick={() => setShow(!show)}
@@ -161,7 +199,7 @@ export default function Projects() {
               </Link>
             </div>
           </div>
-          <hr />
+          <hr /> */}
         </div>
 
         <div className="dev-title">
@@ -208,47 +246,6 @@ export default function Projects() {
                 className="button"
               >
                 <button>Link to Webpage</button>
-              </Link>
-            </div>
-          </div>
-          <hr />
-        </div>
-
-        <div className="dev-title">
-          Software Development
-          <div
-            className={show ? "dropdown-arrow up" : "dropdown-arrow"}
-            onClick={() => setShow(!show)}
-          >
-            ^
-          </div>
-        </div>
-        <div className="project-container">
-          <hr />
-          <div className="java project-one">
-            <div className="title">
-              Minesweeper | Object Oriented Programming
-            </div>
-            <div className="projectDesc">
-              <div className="images">
-                <img
-                  src="/images/project-files/snapshot_java.png"
-                  alt="minesweeper-snapshot"
-                />
-              </div>
-              <div className="tools">
-                <div className="tool">Java</div>
-                <div className="tool">Object Oriented Programming</div>
-              </div>
-              <span>
-                Developed a minesweeper game using Java (swing and awt gui
-                libraries). Focuses heavily on OOP techniques.
-              </span>
-              <Link
-                to="https://github.com/SweetReap/Minesweeper-JAVA"
-                className="button"
-              >
-                <button>Link to GitHub Repo</button>
               </Link>
             </div>
           </div>

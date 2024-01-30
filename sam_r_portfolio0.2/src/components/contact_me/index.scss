@@ -1,0 +1,16 @@
+@import "../base-theme/fonts.scss";
+@import "../base-theme/colors.scss";
+@import "../base-theme/dark-theme.scss";
+@import "../base-theme/breakpoints.scss";
+
+.error{
+  display: grid;
+  place-items: center;
+  font-weight: 200;
+  text-align: center;
+  b{
+    background-color: black;
+    width: 100%;
+    padding: 3rem;
+  }
+}

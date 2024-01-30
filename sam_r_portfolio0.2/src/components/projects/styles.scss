@@ -30,6 +30,7 @@
   display: grid;
   place-items: center;
 
+
   .hidden {
     display: none;
   }
@@ -39,7 +40,7 @@
   }
 
   .dev-title {
-    width: 65%;
+    width: 95%;
     background-color: rgba(4, 3, 40, 0.75);
     padding: 0.6rem;
 
@@ -63,7 +64,7 @@
 }
 
 .project-container {
-  width: 65%;
+  width: 95%;
   background-color: #0a041fb9;
   padding: 0 10rem 0 10rem;
   flex-wrap: wrap;
@@ -89,6 +90,7 @@
     }
     span {
       font-weight: 200;
+      font-size: 1.2rem;
       // margin: .4rem;
       // padding: 1.2rem;
     }
@@ -111,16 +113,7 @@
     .button {
       margin: 1rem;
       float: right;
-      button {
-        transition: all 2s ease-in;
-        @include button-dark;
-      }
-      ::after {
-        @include button-dark-after;
-      }
-      :hover::after {
-        background-color: $alert-color-butt-after;
-      }
+
     }
   }
 }

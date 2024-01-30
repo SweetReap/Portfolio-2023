@@ -1,0 +1,43 @@
+@import '../base-theme/fonts.scss';
+@import '../base-theme/colors.scss';
+@import '../base-theme/breakpoints.scss';
+@import '../base-theme/dark-theme.scss';
+
+.header{
+  .title-project{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .preview{
+    display: grid;
+    place-items: center;
+  }
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  .slideshow{
+    width: 100%;
+    background-color: rgba(255, 228, 196, 0.121);   
+  }
+  .player{
+    aspect-ratio: 16/9;
+    width: 100%;
+    border: 2px solid black;
+  }
+  a, .link{
+    list-style: none;
+    text-decoration: none;
+  }a:visited{
+    color: white;
+  }
+
+}
+
+.context{
+  font-style: italic;
+  color:$box-color-d;
+  float: right;
+  font-size: .9rem;
+}

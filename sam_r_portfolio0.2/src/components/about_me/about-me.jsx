@@ -20,7 +20,6 @@ export default function About_Me() {
   return (
     <div className="skills-container" data-aos="zoom-out">
       <div className="list" data-aos="flip-down">
-        <hr />
         <div className="section">
           <span>T</span>
           <span>O</span>
@@ -92,6 +91,9 @@ export default function About_Me() {
           </ul>
         </div>
       </div>
+
+      <hr />
+
       <div className="about-me-span">
         <div className="span-wid">
           WHAT I DO
@@ -118,6 +120,53 @@ export default function About_Me() {
           enjoy using all of them.
         </span>
         <hr />
+      </div>
+     
+      <div className="experience">
+      <hr />
+        <div className="section">
+          <span>E</span>
+          <span>X</span>
+          <span>P</span>
+          <span>E</span>
+          <span>R</span>
+          <span>I</span>
+          <span>E</span>
+          <span>N</span>
+          <span>C</span>
+          <span>E</span>
+        </div>
+        <div className="job">
+          <div className="title">Lehman College</div>
+          <div className="sub">
+            {" "}
+            <div className="date">
+              <aside>Oct 2021 - Present</aside>
+            </div>
+            <div className="subtitle">College Assistant, Student Retention</div>
+            <div className="location">Bronx,NY</div>
+          </div>
+
+          <div className="desc">
+            <ul>
+              <li>
+                Collaborated with the Director of Student Success Initiatives to
+                create various educational materials for students and staff,
+                such as tutorial videos, informational flyers, and eLearning
+                modules.{" "}
+              </li>
+              <li>
+                Participated with the Navigate team to analyze hundreds of
+                student records with PeopleSoft and implement new systems to
+                increase enrollment and graduation success.
+              </li>
+              <li>
+                Advised prospective and current students on college enrollment
+                procedures, lowering.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       {/* <div className="fun-facts">
         <hr />

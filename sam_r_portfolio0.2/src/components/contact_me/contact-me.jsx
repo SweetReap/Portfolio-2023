@@ -1,5 +1,10 @@
-export default function Contact_Me(){
-    return(
-        <p>Contact Me</p>
-    );
+import "../contact_me/index.scss";
+
+export default function Contact_Me() {
+  return (
+    <div className="error">
+     <br /> <b> 👁️ 👁️ </b> <br /> 
+      Nothing to see here...
+    </div>
+  );
 }

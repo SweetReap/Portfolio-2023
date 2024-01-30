@@ -1,169 +1,257 @@
-import './styles.scss'
+import "./styles.scss";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
-// import Lehman_Project_Popup from '../lehman project/Lehman_Project_Popup';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-export default function Projects(){
+export default function Projects() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      mirror: true,
+      anchorPlacement: "top-bottom",
+      delay: "0",
+    });
+  }, []);
 
-    useEffect(() =>{
-        AOS.init({
-            duration: 1000,
-            mirror:true,
-            anchorPlacement: 'top-bottom',
-            delay:'0'
-        });
-    }, []);
+  const [show, setShow] = useState(false);
 
-    return(
-        //TODO: create a component for the projects that will read from one JSON file.
-        <div>
-        <div className="projects-container" data-aos="fade-down">
-            <div className='dev-title'> <p>Game Development</p>  </div> 
-            <div className='games-container'>
-                
-
-                <div className="project-box-container games-box">
-                    <h1>KAIJU ATTACK!</h1>
-                    <h3>Kaiju Attack is a small game where you, the soldier has to defeat the kaiju destroying the city!! But even in the kaiju's death, they will still rain fire and lighting on you*!!!</h3>
-                    <h2>PICO-8</h2> <h2>LUA</h2>
-                    <iframe className='itch_banner' frameborder="0" src="https://itch.io/embed/1063258?linkback=true&amp;border_width=2&amp;bg_color=4f6781&amp;fg_color=d2d5d7&amp;link_color=9e285b" width="210" height="169"><a href="https://sweet-apple-potatoes.itch.io/kaiju-attack">KAIJU ATTACK!</a></iframe>
-                </div>
-                <div className="project-box-container games-box">
-                    <h1>Jumping Man | Farmer Man</h1>
-                    <h3>Jumping Man is a small game made from PICO-8 that revolves around jumping and catching fruit.</h3>
-                    <h2>PICO-8</h2> <h2>LUA</h2>
-                    <iframe className='itch_banner' frameborder="0" src="https://itch.io/embed/567996?bg_color=0484d1&amp;link_color=ffe762" width="208" height="167"><a href="https://sweet-apple-potatoes.itch.io/jumpman">Jumping Man!</a></iframe>
-                </div>
-                <div className="project-box-container games-box">
-                    <h1>Evil Pot Thingy!</h1>
-                   
-                    <h3>A game about you falling and the Evil Plant!</h3>
-                    <h2>Processing 3</h2> <h2>Aesprite</h2>
-                    <iframe className='itch_banner' frameborder="0" src="https://itch.io/embed/404594?border_width=0&amp;bg_color=4b56eb&amp;link_color=d10312" width="206" height="165"><a href="https://sweet-apple-potatoes.itch.io/evil-pot-thingy">Evil Pot Thingy !</a></iframe>
-                </div>
-            </div>
-
-            <div className='dev-title'><p>Visual Design</p></div>
-            <div className='design-container'>
-                       
-                <div className="project-box-container design-box lehman-project">
-
-                    <div className='left-side'>
-
-                        <div className="flyer-sample">
-                            <div className="overlap-group">
-                                <img className="final-choice" alt="Quick-How-To" src="/dist/images/Lehman Account@0.75x.png" />
-                                <img className="financial-aid" alt="Financial Aid" src="/dist/images/financial-aid.png" />
-                                <img className="help-hub-flyer" alt="Help Hub" src="/dist/images/Idea-One.png" />
-                            </div>
-                        </div>
-                        <div className='lehman college logo' > Help</div>
-                    </div>
-
-                    <div className='right-side'>
-
-                        <div className="label-header">
-                            <div className="text-wrapper"><p>Lehman College | Various</p></div>
-                        </div>
-
-                        <div className="tools-used">
-                            <div className="element">
-                                <div className="overlap-group">
-                                    <div className="text-wrapper">Adobe Illustrator</div>
-                                </div>
-                            </div>
-                            <div className="element">
-                                <div className="overlap-group">
-                                    <div className="text-wrapper">Adobe After Effects</div>
-                                </div>
-                            </div>
-                            <div className="element">
-                                <div className="overlap-group">
-                                    <div className="text-wrapper">Camtasia 2023</div>
-                                </div>
-                            </div>     
-                        </div>
-
-                        <p className="description">
-                            <span className="text-wrapper-desc">
-                                Tasked to create a variation of visual materials, such as flyers, instructional videos, and interactive
-                                learning modules to guide Lehman students to our student support services and prepare Lehman staff for
-                                advising students.
-                                <br />
-                                <br />
-                                Includes visual designs for the Lehman Help Hub, and Lehman Navigate.
-                           </span>
-                        </p>
-
-                        <button>
-                                <div className="text-wrapper">Details</div> 
-                        </button>
-                    </div>
-
-                </div>
-                    
-           </div>
-           {/* <div className='web-dev-container'>
-            <div className='dev-title'><p>Web Development</p></div>
-
-           <div className="project-box-container project-img4">
-                <h1>Box One</h1>
-                <h3>Example Text</h3>
-
-                <p>add img here</p>
-                <img src=''></img>
-            </div>
-            <div className="project-box-container project-img4">
-                <h1>Box One</h1>
-                <h3>Example Text</h3>
-
-                <p>add img here</p>
-                <img src=''></img>
-            </div>
-            <div className="project-box-container project-img4">
-                <h1>Box One</h1>
-                <h3>Example Text</h3>
-
-                <p>add img here</p>
-                <img src=''></img>
-            </div>
-
-           </div> */
-           }
-
-
-        
-
-           {/* <div className='soft-dev-container'>
-            <div className='dev-title'><p>Software Development</p></div>
-
-           <div className="project-box-container project-img4">
-                <h1>Box One</h1>
-                <h3>Example Text</h3>
-
-                <p>add img here</p>
-                <img src=''></img>
-            </div>
-            <div className="project-box-container project-img4">
-                <h1>Box One</h1>
-                <h3>Example Text</h3>
-
-                <p>add img here</p>
-                <img src=''></img>
-            </div>
-            <div className="project-box-container project-img4">
-                <h1>Box One</h1>
-                <h3>Example Text</h3>
-
-                <p>add img here</p>
-                <img src=''></img>
-            </div>
-
-           </div> */}
-         
+  return (
+    //TODO: create a component for the projects that will read from one JSON file.
+    <div data-aos="fade-in">
+      <div className="background">
+        <svg
+          id="patternId"
+          width="100%"
+          height="100%"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <pattern
+              id="a"
+              patternUnits="userSpaceOnUse"
+              width="50"
+              height="100"
+              patternTransform="scale(5) rotate(80)"
+            >
+              <rect
+                x="0"
+                y="0"
+                width="100%"
+                height="100%"
+                fill="hsla(0,0%,20.8%,0)"
+              />
+              <path
+                d="M12.5 0L0 25l12.5 25L25 25 12.5 0zm25 50L25 75l12.5 25L50 75 37.5 50z"
+                stroke-width="1"
+                stroke="none"
+                fill="hsla(0,0%,85.1%,0.25)"
+                className="colorOne"
+              />
+              <path
+                d="M37.5 0L50 25 37.5 50 25 25zm-25 50L25 75l-12.5 25L0 75z"
+                stroke-width="1"
+                stroke="none"
+                fill="hsla(183,30.6%,33.9%,0.25)"
+                className="colorTwo"
+              />
+            </pattern>
+          </defs>
+          <rect
+            width="800%"
+            height="800%"
+            transform="translate(0,0)"
+            fill="url(#a)"
+          />
+        </svg>
+      </div>
+      <div className="projects-container">
+        <div className="dev-title">
+          Software Development
+          <div
+            className={show ? "dropdown-arrow up" : "dropdown-arrow"}
+            onClick={() => setShow(!show)}
+          >
+            ^
+          </div>
         </div>
+        <div className="project-container">
+          <hr />
+          <div className="java project-one">
+            <div className="title">
+              Minesweeper | Object Oriented Programming
+            </div>
+            <div className="projectDesc">
+              <div className="images">
+                <img
+                  src="/images/project-files/snapshot_java.png"
+                  alt="minesweeper-snapshot"
+                />
+              </div>
+              <div className="tools">
+                <div className="tool">Java</div>
+                <div className="tool">Object Oriented Programming</div>
+              </div>
+              <span>
+                Developed a minesweeper game using Java (swing and awt gui
+                libraries). Focuses heavily on OOP techniques.
+              </span>
+              <Link
+                to="https://github.com/SweetReap/Minesweeper-JAVA"
+                className="button"
+              >
+                <button>Link to GitHub Repo</button>
+              </Link>
+            </div>
+          </div>
+          <hr />
         </div>
-    );
+        <div className="dev-title">
+          Game Development
+          <div
+            className={show ? "dropdown-arrow up" : "dropdown-arrow"}
+            onClick={() => setShow(!show)}
+          >
+            ^
+          </div>
+        </div>
+        <div className="project-container">
+          <hr />
+          <div className="itch">
+            <div className="title">Itch.io Showcase</div>
+            <div className="projectDesc">
+              <div className="images">
+                <img src="/images/project-files/jC7LQi.gif" alt="" />
+                <img
+                  src="/images/project-files/kaiju_jamv3_1.gif"
+                  alt="game-display-gif-kaiju-attack"
+                />
+                <img src="/images/project-files/kaiju_jamv2_0.gif" alt="" />
+                <img src="/images/project-files/jumpingman_1.gif" alt="" />
+              </div>
+              <div className="tools">
+                <div className="tool">PICO-8 | LUA</div>
+                <div className="tool">Aesprite</div>
+                <div className="tool">Adobe Photoshop</div>
+                <div className="tool">Object Oriented Programming</div>
+              </div>
+              <span>
+                Included in this section are my all of the{" "}
+                <b>released game prototypes</b> on Itch.IO Take a look at the
+                projects I've worked on and collaborated in!
+              </span>
+
+              <Link
+                to="https://sweet-apple-potatoes.itch.io"
+                className="button"
+              >
+                <button>ITCH.IO PROFILE</button>
+              </Link>
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <div className="dev-title">
+          {/* Visual Design | Instructional Development
+          <div
+            className={show ? "dropdown-arrow up" : "dropdown-arrow"}
+            onClick={() => setShow(!show)}
+          >
+            ^
+          </div>
+        </div>
+        <div className="project-container">
+          <hr />
+          <div className="lehman">
+            <div className="title">
+              Lehman College | College Assistant Projects
+            </div>
+
+            <div className="projectDesc">
+              <div className="images">
+                <img
+                  src="/images/project-files/lehmantitleimg.png"
+                  alt="lehman-title-image"
+                />
+              </div>
+              <div className="tools">
+                <div className="tool">Adobe Illustrator</div>
+                <div className="tool">Adobe After Effects</div>
+                <div className="tool">Adobe Photoshop</div>
+                <div className="tool">Camtasia</div>
+                <div className="tool">Adobe XD</div>
+                <div className="tool">Peoplesoft</div>
+              </div>
+              <span>
+                I've worked on many{" "}
+                <b>educational and promotional materials </b>
+                for the <b>Student Success Initiatives</b> team. While being
+                lightly supervised by the Director and Assistant Director of the
+                team, many{" "}
+                <b>flyers, videos, and interactive eLearning modules </b>were
+                designed and developed to ease the learning curve of newly
+                updated online learning platforms.
+              </span>
+              <Link to="/lehman" className="button">
+                <button>EXPLORE</button>
+              </Link>
+            </div>
+          </div>
+          <hr /> */}
+        </div>
+
+        <div className="dev-title">
+          Web Development
+          <div
+            className={show ? "dropdown-arrow up" : "dropdown-arrow"}
+            onClick={() => setShow(!show)}
+          >
+            ^
+          </div>
+        </div>
+        <div className="project-container">
+          <hr />
+          <div className="gnnyc">
+            <div className="title">Graffiti n' NYC | In Development</div>
+            <div className="projectDesc">
+              <div className="images">
+                <img src="/images/project-files/screenshot_gnnyc.png" alt="" />
+              </div>
+              <div className="tools">
+                <div className="tool">Adobe Photoshop</div>
+                <div className="tool">Vanilla JavaScript</div>
+                <div className="tool">HTML & CSS</div>
+                <div className="tool">API Implementation</div>
+              </div>
+              <span>
+                I participated in{" "}
+                <b>Lehman's 2023 Hackathon partnered with Postman.</b> My team
+                was tasked for 5 hours to develop an API intergrated tool with
+                New Yorkers in mind. <br /> We developed a
+                <b> vanilla JavaScript</b> web application that searches for art
+                galleries based on the user's inputted zipcode.
+                <b>
+                  Google Javascript Maps API and OpenNYC API were intergrated
+                  into the app.
+                </b>
+              </span>
+              <p className="footnote">
+                This website is still in development, and we will be continuing
+                to add multiple features to the app.
+              </p>
+              <Link
+                to="https://cheerful-croissant-7943f1.netlify.app/"
+                className="button"
+              >
+                <button>Link to Webpage</button>
+              </Link>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </div>
+  );
 }

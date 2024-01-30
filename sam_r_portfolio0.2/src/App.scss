@@ -1,24 +1,44 @@
 @import './components/base-theme/fonts.scss';
 @import './components/base-theme/colors.scss';
 @import './components/base-theme/breakpoints.scss';
+@import './components/base-theme/dark-theme.scss';
+
+$animation-time: .3s;
 
 
+:root{
 
-body{
   font-family: 'Karla', sans-serif;
-  color: $dark-text;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-
-  margin: 0;
-  padding: 0;
-
-  transition-duration: 1s;
-
+  background-color: $bkg-color-d; 
+  color: $main-color;
+  transition-duration: .5ms;
   overflow-x: hidden;
+  overflow-y:visible;
+
+  --animation-time: $animation-time;
+  font-size: 15px;
 }
 
-.loading-img{
-  margin-left: 28%;
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to left, #00000000, $alert-color);
+
+  background-color: antiquewhite;
+  margin: 2rem 0rem;
+}
+
+.button {
+  
+  button {
+    transition: all 2s ease-in;
+    @include button-dark;
+  }
+  ::after {
+    @include button-dark-after;
+  }
+  :hover::after {
+    background-color: $alert-color-butt-after;
+  }
 }

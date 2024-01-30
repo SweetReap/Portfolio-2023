@@ -20,7 +20,7 @@ export default function Projects() {
   return (
     //TODO: create a component for the projects that will read from one JSON file.
     <div data-aos="fade-in">
-      <div className="background">
+      {/* <div className="background">
         <svg
           id="patternId"
           width="100%"
@@ -65,7 +65,7 @@ export default function Projects() {
             fill="url(#a)"
           />
         </svg>
-      </div>
+      </div> */}
       <div className="projects-container">
         <div className="dev-title">
           Software Development

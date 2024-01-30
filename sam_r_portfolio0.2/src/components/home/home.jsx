@@ -22,9 +22,6 @@ export default function Home() {
   return (
     <div className="home-page">
       <div className="container">
-        {/* <div className="loading">
-          <div className="text-container">Loading...</div>
-        </div> */}
         <div className="spline-container" data-aos="zoom-in">
           <div className="rotatingsquares">
             {rotatingsquare}
@@ -88,7 +85,7 @@ export default function Home() {
       </div>
       <hr />
       <About_Me />
-
+    </div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import './App.scss'
-import Lehman from './components/lehman project/Lehman.jsx'
+import Lehman from './components/lehman/lehman.jsx'
 import About_Me from './components/about_me/about-me'
 import Contact_Me from './components/contact_me/contact-me'
 import Navbar from './components/nav-bar/navbar.jsx'

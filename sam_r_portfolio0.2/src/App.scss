@@ -7,7 +7,6 @@ $animation-time: .3s;
 
 
 :root{
-
   font-family: 'Karla', sans-serif;
   background-color: $bkg-color-d; 
   color: $main-color;
@@ -17,6 +16,11 @@ $animation-time: .3s;
 
   --animation-time: $animation-time;
   font-size: 15px;
+}
+
+*{
+  margin: 0 ;
+  padding: 0;
 }
 
 hr {
@@ -30,9 +34,9 @@ hr {
 }
 
 .button {
-  
+  transition: all 200ms ease-in-out;
   button {
-    transition: all 2s ease-in;
+    transition: all 200ms ease-in-out;
     @include button-dark;
   }
   ::after {

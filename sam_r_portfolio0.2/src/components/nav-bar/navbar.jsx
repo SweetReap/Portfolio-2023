@@ -3,7 +3,6 @@ import "./styles.scss";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-
   return (
     <nav className="nav-bar">
       <Link to="/" className="page-title">
@@ -15,7 +14,7 @@ export default function Navbar() {
       </Link>
       <ul>
         <li>
-          <Link to="/" >
+          <Link to="/">
             <i class="fa-solid fa-house-user"></i>
             Home
           </Link>
@@ -26,13 +25,18 @@ export default function Navbar() {
             Projects
           </Link>
         </li>
-
-        {/* <li>
+        <li>
           <Link to="/about_me">
             <i class="fa-solid fa-user-secret"></i>
             About Me
           </Link>
-        </li> */}
+        </li>{" "}
+        <li>
+          <Link to="https://drive.google.com/file/d/163nekiodB_L5qxJry9-NgoLZhOP2rLSc/view?usp=share_link">
+            <i class="fa-solid fa-file"></i>
+            Resume
+          </Link>
+        </li>
       </ul>
       <div className="contact-div">
         <ul>

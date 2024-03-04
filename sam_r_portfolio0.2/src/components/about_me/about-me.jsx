@@ -121,9 +121,9 @@ export default function About_Me() {
         </span>
         <hr />
       </div>
-     
+
       <div className="experience">
-      <hr />
+        <hr />
         <div className="section">
           <span>E</span>
           <span>X</span>
@@ -150,19 +150,29 @@ export default function About_Me() {
           <div className="desc">
             <ul>
               <li>
-                Collaborated with the Director of Student Success Initiatives to
-                create various educational materials for students and staff,
-                such as tutorial videos, informational flyers, and eLearning
-                modules.{" "}
+                Created various graphic materials such as tutorial videos,
+                informational flyers, and eLearning modules for Lehman Navigate,
+                improving students’ and upcoming advisors’ better understanding
+                of Navigate.
+              </li>
+              <li>
+                Retrieved data from excel spreadsheets and entered it into
+                CUNYfirst databases, ensuring accuracy and improved quality by
+                35%.
               </li>
               <li>
                 Participated with the Navigate team to analyze hundreds of
-                student records with PeopleSoft and implement new systems to
+                student records with CUNYfirst to implement new systems and
                 increase enrollment and graduation success.
               </li>
               <li>
-                Advised prospective and current students on college enrollment
-                procedures, lowering.
+                Advised over 60 prospective and current students on college
+                enrollment and miscellaneous inquiries.
+              </li>
+              <li>
+                Created the user interface for the new Power BI dashboard for
+                CUNY T-REX after retrieving the necessary data from the
+                Assistant Director of Student Success Initiatives.
               </li>
             </ul>
           </div>

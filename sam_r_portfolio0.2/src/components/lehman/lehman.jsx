@@ -58,14 +58,14 @@ export default function Lehman() {
                 <div className="slideshow">
                   <Slideshow />
                 </div>
-                An vidit dictas doctus est. Mel id audire convenire, aperiam
+                {/* An vidit dictas doctus est. Mel id audire convenire, aperiam
                 invidunt voluptaria his ex, eum et saepe nonumes iracundia! Vix
                 ad solet fuisset. Has ne ceteros accusamus, vidit conceptam ei
                 usu, decore exerci scripta ad est. Nec ea hinc harum suscipit,
                 tamquam imperdiet ad eos! Per an everti detracto sapientem. His
                 consul tibique dignissim eu, suas paulo quaeque eos at. Nam te
                 sanctus facilisi, vel ne solet iisque. Aeterno fuisset nec id,
-                choro tempor constituam eu his, nam mandamus consectetuer an.
+                choro tempor constituam eu his, nam mandamus consectetuer an. */}
               </article>
             </div>
           </article>

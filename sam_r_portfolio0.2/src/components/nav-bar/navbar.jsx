@@ -15,25 +15,25 @@ export default function Navbar() {
       <ul>
         <li>
           <Link to="/">
-            <i class="fa-solid fa-house-user"></i>
+            <i className="fa-solid fa-house-user"></i>
             Home
           </Link>
         </li>
         <li>
           <Link to="/projects">
-            <i class="fa-solid fa-note-sticky"></i>
+            <i className="fa-solid fa-note-sticky"></i>
             Projects
           </Link>
         </li>
         <li>
           <Link to="/about_me">
-            <i class="fa-solid fa-user-secret"></i>
+            <i className="fa-solid fa-user-secret"></i>
             About Me
           </Link>
         </li>{" "}
         <li>
           <Link to="https://drive.google.com/file/d/163nekiodB_L5qxJry9-NgoLZhOP2rLSc/view?usp=share_link">
-            <i class="fa-solid fa-file"></i>
+            <i className="fa-solid fa-file"></i>
             Resume
           </Link>
         </li>

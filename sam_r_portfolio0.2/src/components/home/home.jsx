@@ -1,4 +1,3 @@
-
 import Spline_Sam from "../../assets/3D/spline_sam";
 import "./styles.scss";
 
@@ -60,33 +59,32 @@ export default function Home() {
                 <span>e</span>
               </div>
 
-            <div className="role-title">
-              Game Developer | React.JS Developer | Java Developer | Digital
-              Artist | Fountain Pen Connoisseur
+              <div className="role-title">
+                Game Developer | React.JS Developer | Java Developer | Digital
+                Artist | Fountain Pen Connoisseur
+              </div>
+
+              <hr />
+              <p className="about-me-short">
+                I'm currently a student in NYC who strives to{" "}
+                <b>improve the user experience</b>, create solutions to modern
+                problems, and <b>exemplify the personality</b> of products and
+                applications.
+                <br />I combine my passion for the creative arts with my
+                interests in game development, web design, and UI/UX design to
+                create fun, thoughtful, and engaging content for everyone!
+              </p>
+              <hr />
+
+              <Link to="/projects" className="button" >
+                <button > EXPLORE PROJECTS </button>
+              </Link>
             </div>
-
-            <hr />
-            <p className="about-me-short">
-              I'm currently a student in NYC who strives to{" "}
-              <b>improve the user experience</b>, create solutions to modern
-              problems, and <b>exemplify the personality</b> of products and
-              applications.
-              <br />
-              Strives to combine my passion for the creative arts with my
-              interests in game development, web design, and UI/UX design.
-            </p>
-            <hr />
-
-            <Link to="/projects" className="button">
-              <button> EXPLORE PROJECTS </button>
-            </Link>
           </div>
         </div>
+        <hr />
       </div>
-      <hr />
-      
-    </div>
-    <About_Me />
+      <About_Me />
     </div>
   );
 }

@@ -154,7 +154,7 @@ export default function Projects() {
         </div>
 
         <div className="dev-title">
-          {/* Visual Design | Instructional Development
+          Visual Design | Instructional Development
           <div
             className={show ? "dropdown-arrow up" : "dropdown-arrow"}
             onClick={() => setShow(!show)}
@@ -199,7 +199,7 @@ export default function Projects() {
               </Link>
             </div>
           </div>
-          <hr /> */}
+          <hr />
         </div>
 
         <div className="dev-title">

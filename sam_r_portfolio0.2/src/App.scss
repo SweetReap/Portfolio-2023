@@ -1,25 +1,24 @@
-@import './components/base-theme/fonts.scss';
-@import './components/base-theme/colors.scss';
-@import './components/base-theme/breakpoints.scss';
-@import './components/base-theme/dark-theme.scss';
+@import "./components/base-theme/fonts.scss";
+@import "./components/base-theme/colors.scss";
+@import "./components/base-theme/breakpoints.scss";
+@import "./components/base-theme/dark-theme.scss";
 
-$animation-time: .3s;
+$animation-time: 0.3s;
 
-
-:root{
-  font-family: 'Karla', sans-serif;
-  background-color: $bkg-color-d; 
+:root {
+  font-family: "Karla", sans-serif;
+  background-color: $bkg-color-d;
   color: $main-color;
-  transition-duration: .5ms;
+  transition-duration: 0.5ms;
   overflow-x: hidden;
-  overflow-y:visible;
+  overflow-y: visible;
 
   --animation-time: $animation-time;
   font-size: 15px;
 }
 
-*{
-  margin: 0 ;
+* {
+  margin: 0;
   padding: 0;
 }
 
@@ -33,16 +32,15 @@ hr {
   margin: 2rem 0rem;
 }
 
-.button {
+button {
   transition: all 200ms ease-in-out;
-  button {
-    transition: all 200ms ease-in-out;
-    @include button-dark;
-  }
-  ::after {
-    @include button-dark-after;
-  }
-  :hover::after {
-    background-color: $alert-color-butt-after;
-  }
+
+  transition: all 200ms ease-in-out;
+  @include button-dark;
+}
+button::after {
+  @include button-dark-after;
+}
+button:hover::after {
+  background-color: $alert-color-butt-after;
 }

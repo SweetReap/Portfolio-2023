@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.scss";
+import Slideshow from "./sldeshow";
 
 export default function Lehman() {
   return (
@@ -15,7 +16,7 @@ export default function Lehman() {
         </div>
       </div>
       <div className="container">
-        <div className="one">
+        <div className="content">
           <article>
             <div className="title">Lehman Navigate</div>
             <div className="video">
@@ -28,7 +29,7 @@ export default function Lehman() {
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
+                  allowFullscreen="true"
                 ></iframe>
               </div>
               <div className="context">Youtube Video Example For Navigate</div>
@@ -50,33 +51,25 @@ export default function Lehman() {
             <a href="https://lehman.edu/navigate/student-faq/">
               <b>Link to Other Videos</b>
             </a>
+            <br />
+            <div className="two">
+              <article>
+                <div className="title">Flyers and Merchandise!</div>
+                <div className="slideshow">
+                  <Slideshow />
+                </div>
+                An vidit dictas doctus est. Mel id audire convenire, aperiam
+                invidunt voluptaria his ex, eum et saepe nonumes iracundia! Vix
+                ad solet fuisset. Has ne ceteros accusamus, vidit conceptam ei
+                usu, decore exerci scripta ad est. Nec ea hinc harum suscipit,
+                tamquam imperdiet ad eos! Per an everti detracto sapientem. His
+                consul tibique dignissim eu, suas paulo quaeque eos at. Nam te
+                sanctus facilisi, vel ne solet iisque. Aeterno fuisset nec id,
+                choro tempor constituam eu his, nam mandamus consectetuer an.
+              </article>
+            </div>
           </article>
         </div>
-        <div className="two">
-          <article>
-            <div className="title">Help Hub</div>
-            <div className="slideshow">yes{/* Add slideshow here */}</div>
-            An vidit dictas doctus est. Mel id audire convenire, aperiam
-            invidunt voluptaria his ex, eum et saepe nonumes iracundia! Vix ad
-            solet fuisset. Has ne ceteros accusamus, vidit conceptam ei usu,
-            decore exerci scripta ad est. Nec ea hinc harum suscipit, tamquam
-            imperdiet ad eos! Per an everti detracto sapientem. His consul
-            tibique dignissim eu, suas paulo quaeque eos at. Nam te sanctus
-            facilisi, vel ne solet iisque. Aeterno fuisset nec id, choro tempor
-            constituam eu his, nam mandamus consectetuer an.
-          </article>
-        </div>
-
-        <aside>
-          <div className="title">Tools Used</div>
-          <div className="tools">
-            <div className="tool">Photoshop</div>
-            <div className="tool">Illustrator</div>
-            <div className="tool">Camtasia</div>
-            <div className="tool">After Effects</div>
-            <div className="tool">Adobe XD</div>
-          </div>
-        </aside>
       </div>
     </>
   );

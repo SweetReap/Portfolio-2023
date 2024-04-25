@@ -7,24 +7,28 @@
   .title-project {
     font-size: 2rem;
     text-align: center;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.121);
   }
   .preview {
     display: grid;
+    object-fit: cover;
     place-items: center;
+    margin-top: 0.5rem;
   }
 }
 
 .container {
   display: flex;
-
+  place-items: center;
   .slideshow {
     width: 100%;
     background-color: rgba(35, 22, 6, 0.121);
   }
   .player {
     aspect-ratio: 16/9;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     border: 2px solid black;
   }
   a,
@@ -38,23 +42,24 @@
 
   .content {
     display: block;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 1rem;
     padding: 1rem;
-   
   }
   .title {
     display: block;
     font-size: 1.5rem;
     padding: 0.2rem;
+    background-color: rgba(255, 79, 149, 0.394);
   }
 
   .two {
+    // background-color: aliceblue;
   }
 }
 
-p{
+p {
   text-align: center;
   margin: 2rem 0rem;
 }
@@ -73,7 +78,6 @@ p{
   height: 35rem;
 
   overflow: hidden;
-  
 
   .left {
     float: left;
@@ -92,12 +96,13 @@ p{
     aspect-ratio: 1/1;
   }
 
-  .images-container{
-    
-    img{
-      aspect-ratio: 16/9;
-      object-fit: fill;
-      height: 9%;
+  .image-container {
+    display: block;
+    place-items: center;
+    object-fit: fill;
+    img {
+      width: 750px;
+      aspect-ratio: 16/10;
     }
   }
 }

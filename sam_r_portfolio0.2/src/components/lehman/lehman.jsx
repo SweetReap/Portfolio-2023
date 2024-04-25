@@ -3,6 +3,20 @@ import "./style.scss";
 import Slideshow from "./sldeshow";
 
 export default function Lehman() {
+  const images_one = [
+    "https://i.imgur.com/vBTNfz2.png",
+    "https://i.imgur.com/bUVTNXW.png",
+    "https://i.imgur.com/swQnl21.png",
+    "https://i.imgur.com/oDlyWEa.png",
+    "https://i.imgur.com/auK88x4.jpg",
+    "https://i.imgur.com/EDvxSlP.jpg",
+  ];
+  const images_two = [
+    "https://i.imgur.com/FyIfx2q.jpg",
+    "https://i.imgur.com/XLvHm3G.jpg",
+    "https://i.imgur.com/FH73pcB.jpg",
+  ];
+
   return (
     <>
       <div className="header">
@@ -11,7 +25,7 @@ export default function Lehman() {
           <img
             src="/images/project-files/lehmantitleimg.png"
             alt="lehman-title-image"
-            height={"400px"}
+            height={"300px"}
           />
         </div>
       </div>
@@ -28,7 +42,7 @@ export default function Lehman() {
                   src="https://www.youtube-nocookie.com/embed/vzDTQ9U8S_s?si=WajgVu5WmjyUl6tM"
                   title="YouTube video player"
                   frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media;picture-in-picture; web-share"
                   allowFullscreen="true"
                 ></iframe>
               </div>
@@ -56,18 +70,19 @@ export default function Lehman() {
               <article>
                 <div className="title">Flyers and Merchandise!</div>
                 <div className="slideshow">
-                  <Slideshow />
+                  <Slideshow content={images_one} />
                 </div>
-                {/* An vidit dictas doctus est. Mel id audire convenire, aperiam
-                invidunt voluptaria his ex, eum et saepe nonumes iracundia! Vix
-                ad solet fuisset. Has ne ceteros accusamus, vidit conceptam ei
-                usu, decore exerci scripta ad est. Nec ea hinc harum suscipit,
-                tamquam imperdiet ad eos! Per an everti detracto sapientem. His
-                consul tibique dignissim eu, suas paulo quaeque eos at. Nam te
-                sanctus facilisi, vel ne solet iisque. Aeterno fuisset nec id,
-                choro tempor constituam eu his, nam mandamus consectetuer an. */}
+                <span>
+                  {" "}
+                 <p> Example of my work spanning from flyers to merchandise for
+                  CUNY's Transfer Explorer!</p>
+                </span>
               </article>
             </div>
+          </article>
+          <article>
+            <Slideshow content={images_two} />
+            <p>Informational Diagram about CUNY Pathways </p>
           </article>
         </div>
       </div>

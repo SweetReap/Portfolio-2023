@@ -9,7 +9,7 @@
 .nav-bar {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
 
     overflow: hidden;
@@ -29,7 +29,7 @@
 
         width: 100%;
         li {
-            transition: all 40ms ease-in-out;
+            transition: color 400ms ease-in-out;
             padding: 0;
             list-style-type: none;
             margin: 0;
@@ -41,10 +41,8 @@
                 padding: 20px 20px;
             }
 
-            i {
-                padding: 0.5rem;
-                font-size: 1.2rem;
-            }
+            padding: 0.5rem;
+            font-size: 1rem;
         }
         :hover {
             color: $alert-color;
@@ -55,12 +53,10 @@
     }
 
     .contact-div {
-        // position: absolute;
-        width: 25%;
         // background-color: blue;
         ul {
             li {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 padding: 25px 15px;
                 color: $alert-color-d;
             }

@@ -1,3 +1,11 @@
-.scn{
+@import "src/App.scss";
+
+.scn {
   overflow: visible;
+  margin: 0 auto;
+
+  position: fixed;
+  opacity: 25%;
+  top: -10%;
+  width: 100%;
 }

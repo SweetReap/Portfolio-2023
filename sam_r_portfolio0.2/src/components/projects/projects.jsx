@@ -18,9 +18,9 @@ export default function Projects() {
   const [show, setShow] = useState(false);
 
   return (
-    //TODO: create a component for the projects that will read from one JSON file.
+    //TODO: create a dynamic function for the projects that will read from one JSON file and return each section into a component.
     <div data-aos="fade-in">
-      {/* <div className="background">
+      <div className="background">
         <svg
           id="patternId"
           width="100%"
@@ -65,7 +65,7 @@ export default function Projects() {
             fill="url(#a)"
           />
         </svg>
-      </div> */}
+      </div>
       <div className="projects-container">
         <div className="dev-title">
           Software Development
@@ -194,9 +194,9 @@ export default function Projects() {
                 designed and developed to ease the learning curve of newly
                 updated online learning platforms.
               </span>
-              <Link to="/lehman" className="button">
+              {/* <Link to="/lehman" className="button">
                 <button>EXPLORE</button>
-              </Link>
+              </Link> */}
             </div>
           </div>
           <hr />

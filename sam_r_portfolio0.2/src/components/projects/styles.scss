@@ -13,23 +13,22 @@
 
   animation: opacity-in 4s;
 
-  .colorOne {
-    // -o-animation: opacity ease-in-out infinite;
-    // -moz-animation: opacity ease-in-out infinite;
-    animation: opacity 15s infinite ease-in-out ;
-  }
+  .colorOne,
   .colorTwo {
-    // -o-animation: opacity ease-in-out infinite;
-    // -moz-animation: opacity ease-in-out both infinite;
-    animation: opacity 10s infinite ease-in-out ;
+    -o-animation: opacity-loop ease-in-out infinite;
+    -moz-animation: opacity-loop ease-in-out infinite;
+    animation: opacity-loop 10s infinite ease-in-out;
   }
 }
 
 .projects-container {
-  width: 95%;
+  width: 100%;
   display: grid;
   place-items: center;
 
+  align-items: center;
+  justify-content: center;
+  text-align: left;
 
   .hidden {
     display: none;
@@ -40,10 +39,10 @@
   }
 
   .dev-title {
-    width: 95%;
+    width: 80%;
     background-color: rgba(4, 3, 40, 0.75);
     padding: 0.6rem;
-
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -52,8 +51,7 @@
     color: rgb(233, 233, 233);
 
     .dropdown-arrow {
-      // transform: rotateX(180deg);
-      opacity: 65%;
+      opacity: 95%;
       cursor: pointer;
     }
     .up {
@@ -64,11 +62,10 @@
 }
 
 .project-container {
-  width: 95%;
   background-color: #0a041fb9;
   padding: 0 10rem 0 10rem;
   flex-wrap: wrap;
-
+  width: 80%;
   .title {
     font-size: 1.1rem;
     font-weight: 600;
@@ -79,41 +76,38 @@
     .images {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
-
+      justify-content: center;
       padding: 1rem;
       img {
-        height: 15rem;
+        height: 10rem;
         padding: 0.4rem;
-        // background-color: #00000069;
+        background-color: #00000069;
       }
     }
     span {
       font-weight: 200;
       font-size: 1.2rem;
-      // margin: .4rem;
-      // padding: 1.2rem;
+      margin: 0rem 1rem;
+      text-align: center;
     }
 
     .tools {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
-
-      margin-bottom: 0.5rem;
-
+      justify-content: center;
       .tool {
+        font-size: small;
         font-weight: 600;
         background-color: $alert-color;
         padding: 0.5rem 0.9rem;
+        margin: 0 0.5rem;
         border-radius: 5px;
       }
     }
 
     .button {
       margin: 1rem;
-      float: right;
-
+      float: left;
     }
   }
 }
@@ -126,12 +120,12 @@ hr {
 }
 
 //animation for background
-@keyframes opacity {
+@keyframes opacity-loop {
   0% {
     opacity: 5%;
   }
 
-  25%{
+  25% {
     opacity: 55%;
   }
 
@@ -148,7 +142,7 @@ hr {
   0% {
     opacity: 0%;
   }
-  100% {
+  50% {
     opacity: 100%;
   }
 }

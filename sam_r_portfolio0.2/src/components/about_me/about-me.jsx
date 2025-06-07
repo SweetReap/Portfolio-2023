@@ -33,11 +33,6 @@ export default function About_Me() {
               <FaReact className="icon-react" />
               <a>React.JS</a>
             </li>
-
-            {/* <li>
-              <SiUnity className="icon-react" />
-              <a>Unity</a>
-            </li> */}
             <li>
               <SiAdobephotoshop className="icon-react" />
               <a>Photoshop</a>
@@ -52,7 +47,7 @@ export default function About_Me() {
             </li>
           </ul>
         </div>
-        <hr />
+
         <div className="section">
           <span>L</span>
           <span>A</span>
@@ -109,8 +104,8 @@ export default function About_Me() {
         <div className="span-wid">
           WHAT I VALUE
           <div className="span-wid desc">
-            Emotion, Consistency, Accessibility, and using tools at my disposal
-            to bring out the Character in my projects.
+            Emotion, Consistency, Accessibility, using tools at my disposal to
+            bring out the character in my projects.
           </div>
         </div>
         <hr />
@@ -119,7 +114,6 @@ export default function About_Me() {
           it's graphic design, fine art illustration, or motion graphics, I
           enjoy using all of them.
         </span>
-        <hr />
       </div>
 
       <div className="experience">
@@ -136,12 +130,52 @@ export default function About_Me() {
           <span>C</span>
           <span>E</span>
         </div>
+        
         <div className="job">
           <div className="title">Lehman College</div>
           <div className="sub">
             {" "}
             <div className="date">
-              <aside>Oct 2021 - Present</aside>
+              <aside>September 2024 - Present</aside>
+            </div>
+            <div className="subtitle">
+              College Office Assistant, Registrar Office
+            </div>
+            <div className="location">Bronx,NY</div>
+          </div>
+
+          <div className="desc">
+            <ul>
+              <li>
+                Created sophisticated PowerPoint presentations for students to
+                highlight the goals and objectives of the Registrar Office.
+              </li>
+              <li>
+                Collaborated with the Record and Transcripts unit to automate
+                the process of resolving dozens of duplicate student records
+                using Python Automation.
+              </li>
+              <li>
+                Developed a Power BI application that streamlines the enrollment
+                process for ENCORE students.
+              </li>
+              <li>
+                Advised prospective and current students on enrollment and
+                miscellaneous inquiries at the front desk.
+              </li>
+              <li>
+                Processed digital forms for students on Lehman360 and cooperated
+                on answering email and phone call inquiries.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="job">
+          <div className="title">Lehman College</div>
+          <div className="sub">
+            {" "}
+            <div className="date">
+              <aside>Oct 2021 - August 2024</aside>
             </div>
             <div className="subtitle">College Assistant, Student Retention</div>
             <div className="location">Bronx,NY</div>
@@ -170,7 +204,7 @@ export default function About_Me() {
                 enrollment and miscellaneous inquiries.
               </li>
               <li>
-                Created the user interface for the new Power BI dashboard for
+                Designed the user interface for the new Power BI dashboard for
                 CUNY T-REX after retrieving the necessary data from the
                 Assistant Director of Student Success Initiatives.
               </li>
@@ -178,28 +212,6 @@ export default function About_Me() {
           </div>
         </div>
       </div>
-      {/* <div className="fun-facts">
-        <hr />
-        <div className="fun-fact title">FUN FACTS</div>
-        <span>Cat Lover, Fountain Pen Collector, and a Big Dreamer!</span>
-        <img
-          src="/images/pen.png"
-          alt="fountain pen"
-          width={"100px"}
-          className="pen"
-        />
-      </div> */}
-      {/* <div className="canvas">
-        <div className="rotatingsquares">
-          {rotatingsquare}
-          {rotatingsquare}
-          {rotatingsquare}
-
-          {rotatingsquare}
-          {rotatingsquare}
-        </div>
-        <Spline_Sam_Two />
-      </div> */}
     </div>
   );
 }

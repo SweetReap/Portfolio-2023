@@ -5,188 +5,71 @@
 @import "src/App.scss";
 
 body {
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box;
-    transition: all 2.5s linear;
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  transition: all 2.5s linear;
 }
-
 
 .container {
-    // background-color: $main-color;
-    // width: 90%;
-    display: flex;
-    flex-direction: row;
-    padding: 0.2rem;
+    display: block;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    width: 90%;   
+  .intro {
+    margin: 30em 0em;
+    padding: 0em 5em;
+    justify-content: center;
+    align-items: center;
 
-    // flex-wrap: wrap;
-    // position: absolute;
+    height: 100%;
 
-    .spline-container {
-        // background-color: $dark-text;
-        border-radius: 100%;
-        width: 100%;
-        height: 75rem;
-        // overflow: hidden;
-
-        .rotatingsquares {
-            .back {
-                background-color: $box-color;
-                border-radius: 35%;
-                position: absolute;
-                z-index: -1;
-                -webkit-animation: spin 4s linear infinite;
-                -moz-animation: spin 4s linear infinite;
-                animation: spin 4s linear infinite;
-                width: 40rem;
-                height: 40rem;
-            }
-            :nth-child(even) {
-                left: 155px;
-                animation: spin 3.5s linear infinite;
-                background-color: $dark-text;
-            }
-            :nth-child(odd) {
-                left: 225px;
-                top: 12%;
-                animation: spin 5.5s ease-in-out infinite;
-                opacity: 25%;
-            }
-            :nth-child(2n + 2) {
-                left: 5rem;
-                top: 25rem;
-                width: 20%;
-                height: 20%;
-                background-color: $alert-color;
-                animation: spin 5.5s linear infinite;
-                opacity: 45%;
-            }
-            :nth-child(2n + 3) {
-                left: 325px;
-                top: 25px;
-                width: 25rem;
-                height: 25rem;
-                background-color: $dark-text;
-                animation: spin 3s linear infinite;
-            }
-        }
-
-
-  
-    }
-    .intro {
-        margin-top: 25rem;
-        position: sticky;
-        margin-left: 0rem;
-        justify-content: center;
-        align-items: center;
-
-        height: 100%;
-
-        .intro-one {
-            // margin: 0.5rem;
-            font-size: 1.5rem;
-        }
-
-        .name {
-            // margin: .5rem .5rem;
-            padding-bottom: 1rem;
-            border-radius: 45px;
-            // background-color: $alert-color-d;
-            color: $alert-color;
-
-            font-family: "Itim", sans-serif;
-            font-size: 3rem;
-            text-align: left;
-
-            span {
-                transition: all 300ms ease-in-out;
-                padding: 1px;
-            }
-            :hover {
-                color: $bkg-color;
-                transform: rotateX(15deg);
-                -webkit-transform: rotateX(15deg);
-            }
-        }
-    }
-   
-
-    .span-wid {
-        font-size: 1.5rem;
-
-        .desc {
-            font-size: 1rem;
-            font-family: "Lato";
-        }
+    .intro-one {
+      font-size: 1.5rem;
     }
 
-    .about-me-short {
-        font-size: 1.5rem;
+    .name {
+      // margin: .5rem .5rem;
+      padding-bottom: 1rem;
+      border-radius: 45px;
+      // background-color: $alert-color-d;
+      color: $alert-color;
+
+      font-family: "Itim", sans-serif;
+      font-size: 3rem;
+      text-align: left;
+
+      span {
+        transition: all 300ms ease-in-out;
+        padding: 1px;
+      }
+      :hover {
+        color: $bkg-color;
+        transform: rotateX(15deg);
+        -webkit-transform: rotateX(15deg);
+      }
     }
 
-    b {
-        color: $alert-color;
+    .big-link {
+      float: right;
     }
- 
-    .loading {
-        display: flex;
-        font-size: 3rem;
-        justify-content: center;
-        align-items: center;
-        animation: loading-fade ease-in-out 5s;
-        animation-fill-mode: forwards;
-    }
-    ::after {
-        display: none;
-    }
-}
+  }
 
+  .span-wid {
+    font-size: 1.5rem;
 
-@-moz-keyframes spin {
-    100% {
-        -moz-transform: rotate(360deg);
+    .desc {
+      font-size: 1rem;
+      font-family: "Lato";
     }
-}
-@-webkit-keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-@keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
+  }
 
-@keyframes loading-fade {
-    0% {
-        opacity: 0%;
-        display: block;
-    }
-    20% {
-        opacity: 100%;
-        transform: rotate(90deg);
-    }
-    25% {
-        //testing gap
-    }
+  .about-me-short {
+    font-size: 1.5rem;
+  }
 
-    30% {
-        opacity: 20%;
-    }
-    65% {
-        opacity: 100%;
-    }
-    75% {
-        opacity: 20%;
-    }
-    90% {
-        opacity: 100%;
-    }
-    100% {
-        opacity: 0%;
-        display: none;
-    }
+  b {
+    color: $alert-color;
+  }
 }

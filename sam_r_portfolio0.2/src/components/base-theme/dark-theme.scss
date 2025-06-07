@@ -2,10 +2,10 @@
     appearance: button;
     background-color: #a7174a;
     border: solid transparent;
-    border-radius: 16px;
+    border-radius: 14px;
     border-width: 0 0 4px;
     box-sizing: border-box;
-    color: #ffffff;
+    color: #f4f4f4;
     cursor: pointer;
     display: inline-block;
     font-size: 1rem;
@@ -15,12 +15,11 @@
     margin: 0;
     outline: none;
     overflow: visible;
-    padding: 0.5rem 0.6rem;
+    padding: 0.9rem 0.9rem;
     text-align: center;
     text-transform: uppercase;
     touch-action: manipulation;
     transform: translateZ(0);
-    transition: filter 0.2s;
     user-select: none;
     -webkit-user-select: none;
     vertical-align: middle;

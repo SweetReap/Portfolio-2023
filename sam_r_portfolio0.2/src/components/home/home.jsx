@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import About_Me from "../about_me/about-me";
 
 export default function Home() {
+  
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -17,30 +18,12 @@ export default function Home() {
     });
   }, []);
 
-  const rotatingsquare = <div className="back" />;
   return (
     <div className="home-page">
+      <Spline_Sam />
       <div className="container">
-        <div className="spline-container" data-aos="zoom-in">
-          <div className="rotatingsquares">
-            {rotatingsquare}
-            {rotatingsquare}
-            {rotatingsquare}
-            {rotatingsquare}
-            {rotatingsquare}
-            {rotatingsquare}
-            {rotatingsquare}
-            {rotatingsquare}
-            {rotatingsquare}
-            {rotatingsquare}
-          </div>
-
-          <Spline_Sam />
-        </div>
-
         <div className="intro-container" data-aos="fade-down">
           <div className="intro">
-            <div className="intro-one">Hi! I Am</div>
             <div className="name-container">
               <div className="name">
                 <span>S</span>
@@ -60,24 +43,24 @@ export default function Home() {
               </div>
 
               <div className="role-title">
-                Game Developer | React.JS Developer | Java Developer | Digital
-                Artist | Fountain Pen Connoisseur
+                Game and Web Developer | Digital Artist | Fountain Pen
+                Connoisseur
               </div>
 
               <hr />
               <p className="about-me-short">
-                I'm currently a student in NYC who strives to{" "}
-                <b>improve the user experience</b>, create solutions to modern
-                problems, and <b>exemplify the personality</b> of products and
-                applications.
+                {" "}
+                <b>Improving the user experience</b>, creating solutions to
+                modern problems, and <b>exemplify the personality</b> of
+                products and applications.
+                <br />
                 <br />I combine my passion for the creative arts with my
                 interests in game development, web design, and UI/UX design to
                 create fun, thoughtful, and engaging content for everyone!
               </p>
               <hr />
-
-              <Link to="/projects" className="button" >
-                <button > EXPLORE PROJECTS </button>
+              <Link to="/projects" className="button big-link">
+                <button> EXPLORE PROJECTS </button>
               </Link>
             </div>
           </div>

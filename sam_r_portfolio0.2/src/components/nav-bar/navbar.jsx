@@ -1,10 +1,15 @@
 import "./styles.scss";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse, faNoteSticky, faUserTie, faFileLines } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHouse,
+  faNoteSticky,
+  faUserTie,
+  faFileLines,
+} from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
-library.add(faHouse, faNoteSticky, faUserTie, faFileLines)
+library.add(faHouse, faNoteSticky, faUserTie, faFileLines);
 
 export default function Navbar() {
   return (
@@ -20,41 +25,41 @@ export default function Navbar() {
         <li>
           <Link to="/">
             {/* <i className="fa-solid fa-house-user"></i> */}
-            <FontAwesomeIcon icon="fa-solid fa-house" /> {" "}
-            Home
+            <FontAwesomeIcon icon="fa-solid fa-house" /> Home
           </Link>
         </li>
         <li>
           <Link to="/projects">
             {/* <i className="fa-solid fa-note-sticky"></i> */}
-            <FontAwesomeIcon icon="fa-solid fa-note-sticky" /> {" "}
-            Projects
+            <FontAwesomeIcon icon="fa-solid fa-note-sticky" /> Projects
           </Link>
         </li>
+
         <li>
-          <Link to="/about_me">
-            {/* <i className="fa-solid fa-user-secret"></i> */}
-            <FontAwesomeIcon icon="fa-solid fa-user-tie" /> {" "}
-            About Me
-          </Link>
-        </li>{" "}
-        <li>
-          <Link to="https://drive.google.com/file/d/163nekiodB_L5qxJry9-NgoLZhOP2rLSc/view?usp=share_link" target="_blank" rel="nopener noreferrer">
-            {/* <i className="fa-solid fa-file"></i> */}
-            <FontAwesomeIcon icon="fa-solid fa-file-lines" /> {" "}
-            Resume
+          <Link
+            to="https://drive.google.com/file/d/163nekiodB_L5qxJry9-NgoLZhOP2rLSc/view?usp=share_link"
+            target="_blank"
+            rel="nopener noreferrer"
+          >
+            <FontAwesomeIcon icon="fa-solid fa-file-lines" /> Resume
           </Link>
         </li>
       </ul>
       <div className="contact-div">
         <ul>
-          <Link to="https://github.com/SweetReap/" target="_blank" rel="nopener noreferrer">
+          <Link
+            to="https://github.com/SweetReap/"
+            target="_blank"
+            rel="nopener noreferrer"
+          >
             <li>LinkedIn</li>
-            {/* <FontAwesomeIcon icon="fa-brands fa-github" /> */}
           </Link>
-          <Link to="https://linkedin.com/in/sam-reape" target="_blank" rel="nopener noreferrer">
+          <Link
+            to="https://linkedin.com/in/sam-reape"
+            target="_blank"
+            rel="nopener noreferrer"
+          >
             <li>GitHub</li>
-            {/* <FontAwesomeIcon icon="fa-brands fa-linkedin" /> */}
           </Link>
         </ul>
       </div>

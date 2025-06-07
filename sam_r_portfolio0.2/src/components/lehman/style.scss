@@ -54,9 +54,6 @@
     background-color: rgba(255, 79, 149, 0.394);
   }
 
-  .two {
-    // background-color: aliceblue;
-  }
 }
 
 p {
@@ -77,7 +74,6 @@ p {
   justify-content: center;
   height: 35rem;
 
-  overflow: hidden;
 
   .left {
     float: left;
@@ -101,7 +97,7 @@ p {
     place-items: center;
     object-fit: fill;
     img {
-      width: 750px;
+      width: 80%;
       aspect-ratio: 16/10;
     }
   }

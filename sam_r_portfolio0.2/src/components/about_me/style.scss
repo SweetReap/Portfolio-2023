@@ -9,7 +9,7 @@
 @mixin icon-style($bkg-color) {
     background-color: $bkg-color;
     padding: 1.5rem;
-    margin: 0.5rem;
+    margin: 1.5rem;
     border-radius: 0.5rem;
     align-self: center;
     justify-content: center;
@@ -30,7 +30,7 @@ body {
 
 .skills-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: $dark-text;
@@ -42,7 +42,7 @@ body {
         margin: auto;
         align-items: center;
         justify-items: center;
-        width: 50%;
+        width: 80%;
         // background-color: rgba(7, 14, 41, 0.341);
         padding: 1rem;
         // padding-top: 8rem;
@@ -66,29 +66,32 @@ body {
     }
 
     .list {
-        column-gap: 1rem;
-        width: 50%;
+        display: block;
+        margin: auto;
+        align-items: center;
+        justify-items: center;
+        width: 80%;    
 
         .skills ul {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content:space-around;
 
             li {
                 display: flex;
                 flex-direction: column;
                 list-style: none;
-                padding: 1.2rem;
-                margin: 1%;
+                // padding: 1.2rem;
+                // margin: 1%;
 
                 align-items: center;
                 justify-content: center;
             }
             .icon-react {
-                padding: 0.2rem;
-                font-size: 4.5rem;
-                align-items: center;
                 @include icon-style($alert-color);
+                padding: 10%;
+                font-size: 5rem;
+                align-items: center;  
             }
             .icon-react:hover {
                 @include icon-hover($alert-color, -5px, 25);
@@ -97,11 +100,11 @@ body {
     }
 
     .experience {
-        display: flex;
-        flex-direction: column;
+         display: block;
+        margin: auto;
         align-items: center;
-        justify-content: space-between;
-
+        justify-items: center;
+        width: 80%;  
         .job {
             display: block;
             align-content: center;
@@ -135,25 +138,6 @@ body {
                     // list-style: none;
                 }
             }
-        }
-    }
-
-    .fun-facts {
-        display: flex;
-        flex-direction: column;
-        .title {
-            font-size: 2rem;
-            font-family: "Itim";
-            color: $alert-color;
-        }
-        width: 100%;
-        span {
-            font-size: 1.5rem;
-            // font-family: "Itim";
-            color: $alert-color;
-        }
-        .pen {
-            animation: spin 2.5s linear infinite;
         }
     }
 

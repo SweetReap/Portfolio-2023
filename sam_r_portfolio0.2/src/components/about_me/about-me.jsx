@@ -12,6 +12,7 @@ import "./style.scss";
 
 import "aos/dist/aos.css";
 import Spline_Sam_Two from "../../assets/3D/spline_jewel_2";
+import Heading from "../bits/Bits";
 // import Spline_Jewel from "../../assets/3D/spline_jewel";
 
 export default function About_Me() {
@@ -20,13 +21,7 @@ export default function About_Me() {
   return (
     <div className="skills-container" data-aos="zoom-out">
       <div className="list" data-aos="flip-down">
-        <div className="section">
-          <span>T</span>
-          <span>O</span>
-          <span>O</span>
-          <span>L</span>
-          <span>S</span>
-        </div>
+        <Heading str="TOOLS" />
         <div className="skills">
           <ul data-aos="fade-down">
             <li>
@@ -48,17 +43,7 @@ export default function About_Me() {
           </ul>
         </div>
 
-        <div className="section">
-          <span>L</span>
-          <span>A</span>
-          <span>N</span>
-          <span>G</span>
-          <span>U</span>
-          <span>A</span>
-          <span>G</span>
-          <span>E</span>
-          <span>S</span>
-        </div>
+        <Heading str="LANGUAGES" />
 
         <div className="skills">
           <ul data-aos="fade-down">
@@ -118,19 +103,8 @@ export default function About_Me() {
 
       <div className="experience">
         <hr />
-        <div className="section">
-          <span>E</span>
-          <span>X</span>
-          <span>P</span>
-          <span>E</span>
-          <span>R</span>
-          <span>I</span>
-          <span>E</span>
-          <span>N</span>
-          <span>C</span>
-          <span>E</span>
-        </div>
-        
+        <Heading str="EXPERIENCE" />
+
         <div className="job">
           <div className="title">Lehman College</div>
           <div className="sub">
@@ -147,25 +121,32 @@ export default function About_Me() {
           <div className="desc">
             <ul>
               <li>
-                Created sophisticated PowerPoint presentations for students to
-                highlight the goals and objectives of the Registrar Office.
+                Designed professional PowerPoint presentations to communicate
+                the Office of The Registrar’s services and procedures to
+                students, enhancing departmental transparency and improving
+                student understanding of available resources.
               </li>
               <li>
                 Collaborated with the Record and Transcripts unit to automate
-                the process of resolving dozens of duplicate student records
-                using Python Automation.
+                the process of resolving duplicate student records using Python
+                Automation, decreasing process time by 50%.
               </li>
               <li>
                 Developed a Power BI application that streamlines the enrollment
-                process for ENCORE students.
+                process for ENCORE students, increasing structure and formality
+                to the original process, and minimizing billing complications by
+                80%.
               </li>
               <li>
-                Advised prospective and current students on enrollment and
-                miscellaneous inquiries at the front desk.
+                Generated and reported daily enrollment metrics to the
+                Enrollment Management team, providing critical data insights to
+                support strategic decision-making and institutional planning.
               </li>
               <li>
-                Processed digital forms for students on Lehman360 and cooperated
-                on answering email and phone call inquiries.
+                Developed comprehensive PowerPoint presentations and training
+                documentation for new staff onboarding, reducing the need for
+                individual one-on-one meetings and improving training efficiency
+                across the organization.
               </li>
             </ul>
           </div>
@@ -190,9 +171,10 @@ export default function About_Me() {
                 of Navigate.
               </li>
               <li>
-                Retrieved data from excel spreadsheets and entered it into
-                CUNYfirst databases, ensuring accuracy and improved quality by
-                35%.
+                Assisted with the back-end configuration of the Navigate Mass
+                Advisor Reassignment project, ensuring accuracy, and improving
+                the quality of future advisement of undergraduate students using
+                Power Query.
               </li>
               <li>
                 Participated with the Navigate team to analyze hundreds of
@@ -200,13 +182,20 @@ export default function About_Me() {
                 increase enrollment and graduation success.
               </li>
               <li>
-                Advised over 60 prospective and current students on college
-                enrollment and miscellaneous inquiries.
+                Collected and integrated data from CUNYfirst to create and
+                maintain various Power BI dashboards for the Nursing Department
+                and Transfer Explorer team, increasing insight for over 5,000
+                student records.
               </li>
               <li>
                 Designed the user interface for the new Power BI dashboard for
                 CUNY T-REX after retrieving the necessary data from the
                 Assistant Director of Student Success Initiatives.
+              </li>
+              <li>
+                Participated in multiple outreach call campaigns to address and
+                resolve enrollment and tuition concerns, offering clear support
+                to students through organized campaigns.
               </li>
             </ul>
           </div>

@@ -7,6 +7,7 @@ import { useEffect } from "react";
 
 import { Link } from "react-router-dom";
 import About_Me from "../about_me/about-me";
+import Heading from "../bits/Bits";
 
 export default function Home() {
   
@@ -25,23 +26,7 @@ export default function Home() {
         <div className="intro-container" data-aos="fade-down">
           <div className="intro">
             <div className="name-container">
-              <div className="name">
-                <span>S</span>
-                <span>a</span>
-                <span>m</span>
-                <span>a</span>
-                <span>n</span>
-                <span>t</span>
-                <span>h</span>
-                <span>a</span>
-                <span> </span>
-                <span>R</span>
-                <span>e</span>
-                <span>a</span>
-                <span>p</span>
-                <span>e</span>
-              </div>
-
+              <Heading str="Samantha Reape"/>
               <div className="role-title">
                 Game and Web Developer | Digital Artist | Fountain Pen
                 Connoisseur
@@ -60,7 +45,7 @@ export default function Home() {
               </p>
               <hr />
               <Link to="/projects" className="button big-link">
-                <button> EXPLORE PROJECTS </button>
+                 EXPLORE PROJECTS 
               </Link>
             </div>
           </div>

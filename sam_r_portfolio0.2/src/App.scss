@@ -32,6 +32,17 @@ hr {
   margin: 2rem 0rem;
 }
 
+.button {
+  @include button-dark;
+  transition: all 2s ease-in-out;
+}
+.button::after {
+  @include button-dark-after;
+}
+.button:hover::after {
+  background-color: $alert-color-butt-after;
+}
+
 button {
   @include button-dark;
   transition: all 2s ease-in-out;

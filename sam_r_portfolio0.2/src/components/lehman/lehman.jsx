@@ -21,13 +21,6 @@ export default function Lehman() {
     <>
       <div className="header">
         <div className="title-project">STUDENT SUCCESS INITIATIVES</div>
-        <div className="preview">
-          <img
-            src="/images/project-files/lehmantitleimg.png"
-            alt="lehman-title-image"
-            height={"300px"}
-          />
-        </div>
       </div>
       <div className="container">
         <div className="content">
@@ -37,13 +30,11 @@ export default function Lehman() {
               <div className="embed">
                 <iframe
                   className="player"
-                  width="560"
-                  height="315"
                   src="https://www.youtube-nocookie.com/embed/vzDTQ9U8S_s?si=WajgVu5WmjyUl6tM"
                   title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media;picture-in-picture; web-share"
-                  allowFullscreen="true"
+                  frameborder="1"
+                  allow="accelerometer; clipboard-write; encrypted-media; web-share;"
+                  allowFullscreen="false"
                 ></iframe>
               </div>
               <div className="context">Youtube Video Example For Navigate</div>
@@ -74,8 +65,11 @@ export default function Lehman() {
                 </div>
                 <span>
                   {" "}
-                 <p> Example of my work spanning from flyers to merchandise for
-                  CUNY's Transfer Explorer!</p>
+                  <p>
+                    {" "}
+                    Example of my work spanning from flyers to merchandise for
+                    CUNY's Transfer Explorer!
+                  </p>
                 </span>
               </article>
             </div>

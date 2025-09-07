@@ -1,0 +1,29 @@
+{
+  "projects": [
+    {
+      "type": "Game Development",
+      "title": "Itch.io Showcase",
+      "imgs": [
+        "/images/project-files/kaiju_jamv3_1.gif",
+        "/images/project-files/jC7LQi.gif",
+        "/images/project-files/jumpingman_1.gif",
+        "/images/project-files/kaiju_jamv2_0.gif"
+      ],
+      "tools": ["Aesprite", "LUA"],
+      "desc": "Included in this section are all of the released game prototypes on itch.io. Take a look at the projects I've worked on and collaborated on!",
+      "buttonText": "View Projects on ITCH",
+      "link": "https://sweet-apple-potatoes.itch.io"
+    },
+    {
+      "type": "Visual Design",
+      "title": "Lehman College | Projects",
+      "imgs": [
+       "/images/project-files/lehmantitleimg.png"
+      ],
+      "tools": ["Adobe Creative Apps", "Camtasia", "PeopleSoft/CUNYfirst"],
+      "desc": "I've worked on many educational and promotional materials for the Student Success Initiatives team. While being lightly supervised by the Director and Assistant Director of the team, many flyers, videos, and interactive eLearning modules were designed and developed to ease the learning curve of newly updated online learning platforms.",
+      "buttonText": "Explore",
+      "link": "/lehman"
+    }
+  ]
+}

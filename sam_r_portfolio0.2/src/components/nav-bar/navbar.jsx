@@ -48,14 +48,14 @@ export default function Navbar() {
       <div className="contact-div">
         <ul>
           <Link
-            to="https://github.com/SweetReap/"
+            to="https://linkedin.com/in/sam-reape"
             target="_blank"
             rel="nopener noreferrer"
           >
             <li>LinkedIn</li>
           </Link>
           <Link
-            to="https://linkedin.com/in/sam-reape"
+            to="https://github.com/SweetReap/"
             target="_blank"
             rel="nopener noreferrer"
           >

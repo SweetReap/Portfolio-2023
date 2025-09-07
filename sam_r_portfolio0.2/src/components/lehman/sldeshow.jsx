@@ -4,7 +4,6 @@ import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
 
 export default function Slideshow(props) {
-
   const [image, setImage] = useState(0);
   const [action, setAction] = useState("flip-left");
 
@@ -21,7 +20,6 @@ export default function Slideshow(props) {
       <div className="container-slideshow">
         <div className="left arrow">
           <button
-            type="button"
             onClick={() => {
               setAction("flip-left");
               if (image === 0) {
@@ -43,9 +41,8 @@ export default function Slideshow(props) {
             referrerPolicy="no-referrer"
           />
         </div>
-        <div className="right arrow button ">
+        <div className="right arrow  ">
           <button
-            type="button"
             onClick={() => {
               setAction("flip-right");
               if (image === props.content.length - 1) {
@@ -63,7 +60,7 @@ export default function Slideshow(props) {
       </div>
       <p>
         {" "}
-        {image} of {props.content.length - 1}{" "}
+        {image + 1} of {props.content.length }{" "}
       </p>
     </>
   );

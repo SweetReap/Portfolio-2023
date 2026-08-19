@@ -20,12 +20,12 @@
   // margin: auto 0;
 
   // this animation makes my laptop go crazy and I do not know why.
-  // .colorOne{
-  //   @include fading-animation(5s)
-  //  }
-  //  .colorTwo {
-  //    @include fading-animation(10s)
-  //  }
+  .colorOne{
+    @include fading-animation(1.5s)
+   }
+   .colorTwo {
+     @include fading-animation(1s)
+   }
 }
 
 .projects-container {
@@ -129,19 +129,19 @@ hr {
 //animation for background
 @keyframes opacity-loop {
   0% {
-    opacity: 5%;
+    opacity: 0%;
   }
 
   25% {
-    opacity: 55%;
+    opacity: 25%;
   }
 
   50% {
-    opacity: 65%;
+    opacity: 55%;
   }
 
   100% {
-    opacity: 15%;
+    opacity: 0%;
   }
 }
 

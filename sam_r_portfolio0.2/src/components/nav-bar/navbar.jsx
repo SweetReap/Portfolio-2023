@@ -6,6 +6,7 @@ import {
   faNoteSticky,
   faUserTie,
   faFileLines,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
@@ -37,7 +38,7 @@ export default function Navbar() {
 
         <li>
           <Link
-            to="https://drive.google.com/file/d/163nekiodB_L5qxJry9-NgoLZhOP2rLSc/view?usp=share_link"
+            to="https://drive.google.com/file/d/163nekiodB_L5qxJry9-NgoLZhOP2rLSc/view?usp=drive_link"
             target="_blank"
             rel="nopener noreferrer"
           >
@@ -67,6 +68,14 @@ export default function Navbar() {
             <p>Color Mode</p>
             <button>0</button>
         </div> */}
+      <div className="sandwich">
+        <FontAwesomeIcon
+          icon={faBars}
+          color="#f33d64d0"
+          size="3x"
+          className="hamburger-icon"
+        />
+      </div>
     </nav>
   );
 }

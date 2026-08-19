@@ -30,61 +30,57 @@ export default function Projects() {
             desc={project.desc}
             link={project.link}
             buttonText={project.buttonText}
-            
           />
         );
       })}
     </div>
   );
+
+  const svg_bkg = (
+    <div className="background">
+      <svg
+        id="patternId"
+        xmlns="http://www.w3.org/2000/svg"
+        width="100%"
+        height="100%"
+      >
+        <defs>
+          <pattern
+            id="a"
+            width="50"
+            height="100"
+            patternTransform="rotate(80)scale(5)"
+            patternUnits="userSpaceOnUse"
+          >
+            <rect
+              x="0"
+              y="0"
+              width="100%"
+              height="100%"
+              fill="hsla(0,0%,20.8%,0)"
+            />
+            <path
+              fill="hsla(0,0%,85.1%,0.25)"
+              d="M12.5 0 0 25l12.5 25L25 25zm25 50L25 75l12.5 25L50 75z"
+              className="colorOne"
+            />
+            <path
+              fill="hsla(183,30.6%,33.9%,0.25)"
+              d="M37.5 0 50 25 37.5 50 25 25zm-25 50L25 75l-12.5 25L0 75z"
+              className="colorTwo"
+            />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#a)" />
+      </svg>
+    </div>
+  );
   return (
-    <div data-aos="fade-in">
-      <div className="background">
-        <svg
-          id="patternId"
-          width="100%"
-          height="100%"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <defs>
-            <pattern
-              id="a"
-              patternUnits="userSpaceOnUse"
-              width="50"
-              height="100"
-              patternTransform="scale(5) rotate(80)"
-            >
-              <rect
-                x="0"
-                y="0"
-                width="100%"
-                height="100%"
-                fill="hsla(0,0%,20.8%,0)"
-              />
-              <path
-                d="M12.5 0L0 25l12.5 25L25 25 12.5 0zm25 50L25 75l12.5 25L50 75 37.5 50z"
-                strokeWidth="1"
-                stroke="none"
-                fill="hsla(0,0%,85.1%,0.25)"
-                className="colorOne"
-              />
-              <path
-                d="M37.5 0L50 25 37.5 50 25 25zm-25 50L25 75l-12.5 25L0 75z"
-                strokeWidth="1"
-                stroke="none"
-                fill="hsla(183,30.6%,33.9%,0.25)"
-                className="colorTwo"
-              />
-            </pattern>
-          </defs>
-          <rect
-            width="800%"
-            height="800%"
-            transform="translate(0,0)"
-            fill="url(#a)"
-          />
-        </svg>
+    <div className="container">
+      {svg_bkg}
+      <div className="projects-container" data-aos="fade-in">
+        {populate_page}
       </div>
-      {populate_page}
     </div>
   );
 }

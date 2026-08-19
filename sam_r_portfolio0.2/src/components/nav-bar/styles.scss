@@ -1,68 +1,125 @@
 @import "../base-theme/colors.scss";
 @import "../base-theme/fonts.scss";
-@import "../base-theme/breakpoints.scss";
+// @import "../base-theme/breakpoints.scss";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+
+  background-color: $bkg-color-d;
+  z-index: 4;
+
+  padding: 1%;
+
+  .hamburger-icon {
+    display: none;
+  }
+  
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+
     width: 100%;
 
-    overflow: hidden;
-    position: sticky;
-    top: 0;
+    li {
+      transition: color 1s ease-in-out;
+      padding: 0;
+      list-style-type: none;
+      margin: 0;
+      justify-self: center;
+      a {
+        display: block;
+        color: $light-text;
+        text-decoration: none;
+        padding: 20px 20px;
+      }
 
-    background-color: $bkg-color-d;
-    z-index: 4;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    :hover {
+      color: $alert-color;
+    }
+    ::after {
+      color: $alert-color;
+    }
+  }
 
+  .contact-div {
+    // background-color: blue;
     ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        display: flex;
-        flex-direction: row;
+      li {
+        font-size: 1.2rem;
+        padding: 25px 15px;
+        color: $alert-color-d;
+      }
+      :hover {
+        color: $main-color-d;
+      }
+    }
+  }
 
-        width: 100%;
-        li {
-            transition: color 400ms ease-in-out;
-            padding: 0;
-            list-style-type: none;
-            margin: 0;
-            justify-self: center;
-            a {
-                display: block;
-                color: $light-text;
-                text-decoration: none;
-                padding: 20px 20px;
-            }
+  @media screen and (max-width: 768px) {
+  
+    background-color: transparent;
+    position: initial;
+    height: auto;
+    min-height: auto;
 
-            padding: 0.5rem;
-            font-size: 1rem;
-        }
-        :hover {
-            color: $alert-color;
-        }
-        ::after {
-            color: $alert-color;
-        }
+    ul,
+    nav {
+      display: none;
     }
 
-    .contact-div {
-        // background-color: blue;
-        ul {
-            li {
-                font-size: 1.2rem;
-                padding: 25px 15px;
-                color: $alert-color-d;
-            }
-            :hover {
-                color: $main-color-d;
-            }
-        }
+    // temp
+    nav {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: $alert-color;
+      top: 0;
+      left: 0;
+      position: fixed;
+      z-index: 2;
+      margin: 0;
     }
+
+    .hamburger-icon {
+      display: block;
+      margin-top: 15px;
+    //   position: right;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    a:after {
+      opacity: 1 !important;
+      position: initial;
+      width: auto;
+      margin-left: 1%;
+    }
+  
 }
+
+}
+
+

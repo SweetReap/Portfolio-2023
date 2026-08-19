@@ -1,6 +1,6 @@
 @import "./components/base-theme/fonts.scss";
 @import "./components/base-theme/colors.scss";
-@import "./components/base-theme/breakpoints.scss";
+// @import "./components/base-theme/breakpoints.scss";
 @import "./components/base-theme/dark-theme.scss";
 
 $animation-time: 0.3s;
@@ -9,12 +9,11 @@ $animation-time: 0.3s;
   font-family: "Karla", sans-serif;
   background-color: $bkg-color-d;
   color: $main-color;
-  transition-duration: 0.5ms;
   overflow-x: hidden;
   overflow-y: visible;
 
   --animation-time: $animation-time;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 * {

@@ -16,9 +16,9 @@ body {
     margin: auto;
     align-items: center;
     justify-items: center;
-    width: 90%;   
+    width: 100%;   
   .intro {
-    margin: 30em 0em;
+    margin-bottom: 7em;
     padding: 0em 5em;
     justify-content: center;
     align-items: center;
@@ -30,13 +30,12 @@ body {
     }
 
     .name {
-      // margin: .5rem .5rem;
       padding-bottom: 1rem;
       border-radius: 45px;
       // background-color: $alert-color-d;
       color: $alert-color;
 
-      font-family: "Itim", sans-serif;
+      font-family: 'Itim',sans-serif;
       font-size: 3rem;
       text-align: left;
 

@@ -41,7 +41,7 @@ export default function Home() {
                 <br />
                 <br />I combine my passion for the creative arts with my
                 interests in game development, web design, and UI/UX design to
-                create fun, thoughtful, and engaging content for everyone!
+                create entertaining, thoughtful, and engaging content.
               </p>
               <hr />
               <Link to="/projects" className="button big-link">

@@ -3,9 +3,9 @@
 .scn {
   overflow: visible;
   margin: 0 auto;
-
+  z-index: -1;
   position: fixed;
   opacity: 25%;
   top: -10%;
-  width: 100%;
+  width: 50%;
 }
